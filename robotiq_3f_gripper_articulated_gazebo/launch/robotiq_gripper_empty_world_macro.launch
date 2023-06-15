@@ -8,7 +8,7 @@
   </include>
 
   <!-- upload gripper urdf to robot_description -->
-  <include file="$(find robotiq_3f_gripper_visualization)/launch/robotiq_gripper_upload.launch">
+  <include file="$(find robotiq_3f_gripper_visualization)/launch/robotiq_gripper_upload_macro.launch">
   </include>
 
   <!-- Start the publisher for the left hand (the only hand) -->

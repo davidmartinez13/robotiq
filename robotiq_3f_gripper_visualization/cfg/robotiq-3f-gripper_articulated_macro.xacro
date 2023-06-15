@@ -22,15 +22,15 @@ there are multiple hands then a prefix followed by an "_" is needed.
         <link name="world"/>
             <joint name="fixed" type="fixed">
                 <parent link="world"/>
-                <child link="base_link_hithand"/> 
+                <child link="${prefix}palm"/> 
                 <origin xyz="0 0 0.1" rpy="0 0 0"/>
             </joint>
         </xacro:if> -->
 
         <!-- <xacro:if value="${attached}">
-            <joint name="${ns}_hithand_joint" type="fixed">
+            <joint name="${ns}_robotiq_3f_joint" type="fixed">
                 <parent link="${parent}"/>
-                <child link="base_link_hithand"/>
+                <child link="${prefix}palm"/>
                 <origin xyz="${xyz}" rpy="${rpy}"/>
             </joint>
         </xacro:if> -->

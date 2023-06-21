@@ -7,7 +7,7 @@ robotiq_hand - articulated version of the robotiq robotiq-3f-gripper,
 <robot name="robotiq_hand" xmlns:xacro="http://ros.org/wiki/xacro">
 
         <xacro:include filename="$(find robotiq_3f_gripper_visualization)/cfg/robotiq_hand_macro.urdf.xacro" />
-        <xacro:robotiq_hand prefix="left_hand" attached="true" reflect="" parent="panda_link8" xyz="0 0 0.05" rpy="1.5708 0 0"/>
+        <xacro:robotiq_hand prefix="" attached="true" reflect="" parent="panda_link8" xyz="0 0 0.05" rpy="1.5708 0 0"/>
 
 </robot>
 

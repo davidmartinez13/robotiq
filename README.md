@@ -44,3 +44,48 @@ This repo holds source code for all versions > groovy. For those versions <= gro
 [SVN repo]: https://code.google.com/p/swri-ros-pkg/source/browse
 ## For xacro debug
 `check_urdf <(xacro robotiq_hand.xacro)`
+## Usage
+- To spawn the robotiq dummy gripper in gazebo run: 
+
+    ```bash
+    roslaunch robotiq_3f_gripper_articulated_gazebo robotiq_gripper_empty_world.launch
+    ```
+- To spawn the robotiq gripper in gazebo run: 
+
+    ```bash
+    roslaunch robotiq_3f_gripper_articulated_gazebo robotiq_gripper_empty_world_macro.launch
+    ```
+
+    - Test the control with the provided python script:
+        ```bash
+        cd /robotiq/robotiq_3f_gripper_control/nodes/
+
+        python2 Robotiq3FGripperSimpleController.py
+        ```
+        - The following commands are available from the python script:
+    
+            r: Reset
+
+            a: Activate
+
+            c: Close
+
+            o: Open
+
+            b: Basic mode
+
+            p: Pinch mode
+
+            w: Wide mode
+
+            s: Scissor mode
+
+            (0-255): Go to that position
+
+            f: Faster
+
+            l: Slower
+
+            i: Increase force
+
+            d: Decrease force

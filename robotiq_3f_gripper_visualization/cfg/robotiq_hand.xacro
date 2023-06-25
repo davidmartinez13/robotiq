@@ -5,9 +5,25 @@ robotiq_hand - articulated version of the robotiq robotiq-3f-gripper,
 3 fingered gripper.                                                
 -->
 <robot name="robotiq_hand" xmlns:xacro="http://ros.org/wiki/xacro">
+        <xacro:arg name="parent"                  default="panda_link8"/>
+        <xacro:arg name="attached"                 default="true" />
+        <xacro:arg name="prefix"                 default="" />
 
         <xacro:include filename="$(find robotiq_3f_gripper_visualization)/cfg/robotiq_hand_macro.urdf.xacro" />
-        <xacro:robotiq_hand prefix="" attached="true" reflect="" parent="panda_link8" xyz="0 0 0.05" rpy="1.5708 0 0"/>
+        <xacro:robotiq_hand prefix="$(arg prefix)" attached="$(arg attached)" reflect="" parent="$(arg parent)" xyz="0 0 0.05" rpy="1.5708 0 0"/>
+        <gazebo>
+        <!-- plugin for the RobotiQ hand -->
+                <plugin name="robotiq_hand_plugin" filename="libRobotiqHandPlugin.so">
+                        <kp_position>10.0</kp_position>
+                        <kd_position>0.5</kd_position>
+                        <!-- Some optional parameters. Check the plugin header file for all of them. -->
+                        <!--<prefix>pre_</prefix>-->
+                        <!-- This is chosen, so it's compatible with the "Robotiq3FGripperSimpleController.py"-->
+                        <topic_command>/Robotiq3FGripperRobotOutput</topic_command>
+                        <topic_state>/hand/state</topic_state>
+
+                </plugin>
+        </gazebo>
 
 </robot>
 

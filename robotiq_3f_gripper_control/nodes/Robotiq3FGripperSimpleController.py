@@ -41,7 +41,7 @@ Command-line interface for sending simple commands to a ROS node controlling a 3
 
 This serves as an example for publishing messages on the 'Robotiq3FGripperRobotOutput' topic using the 'Robotiq3FGripper_robot_output' msg type for sending commands to a 3F gripper gripper. In this example, only the simple control mode is implemented. For using the advanced control mode, please refer to the Robotiq support website (support.robotiq.com).
 """
-
+# Execute "roslaunch robotiq_3f_gripper_articulated_gazebo robotiq_gripper_empty_world_macro.launch" to control in gazebo with this script.
 from __future__ import print_function
 
 import roslib;

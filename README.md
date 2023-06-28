@@ -45,6 +45,16 @@ This repo holds source code for all versions > groovy. For those versions <= gro
 ## For xacro debug
 `check_urdf <(xacro robotiq_hand.xacro)`
 ## Usage
+1. Install the Robotiq ros services control pkg:
+    ```bash
+    cd workspace/src
+
+    git clone https://github.com/davidmartinez13/robotiq_3f_ros_pkg.git
+
+    cd ..
+
+    catkin build robotiq_3f_ros_pkg
+    ```
 - To spawn the robotiq dummy gripper in gazebo run: 
 
     ```bash
@@ -89,3 +99,23 @@ This repo holds source code for all versions > groovy. For those versions <= gro
             i: Increase force
 
             d: Decrease force
+    - Or, control the gripper with ros services:
+        
+        - If in sim, then launch the listener for sim:
+            ```
+            roslaunch robotiq_3f_driver listener_sim.launch
+            ```
+        - If not on sim, launch the listener:
+            ```
+            roslaunch robotiq_3f_driver listener.launch ip_address:=192.168.1.11
+            ```
+            Both ways the ROS services and gripper will be activated.\
+            Try sending some commands as:
+
+            ```
+            rosservice call /robotiq_3f_gripper/activate
+            rosservice call /robotiq_3f_gripper/set_mode wide
+            rosservice call /robotiq_3f_gripper/set_position 200
+            rosservice call /robotiq_3f_gripper/set_position 150
+            rosservice call /robotiq_3f_gripper/set_position 0
+            ```

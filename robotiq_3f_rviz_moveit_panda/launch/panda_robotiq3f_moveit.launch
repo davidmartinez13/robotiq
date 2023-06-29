@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+  <arg name="load_hand"                  default="true"/>
+  <arg name="fake_execution"             default="true"/> 
+  <arg name="allow_trajectory_execution" default="true"/> 
+  <arg name="debug"                      default="false" />
+
+  <param name="/use_sim_time"          value="true"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <!-- Load the URDF, SRDF and other .yaml configuration files on the param server -->
+  <include file="$(find robotiq_3f_rviz_moveit_panda)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="false"/>
+  </include> 
+  
+  <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers
+	configured by default) -->
+  <!-- <include file="$(find robotiq_3f_rviz_moveit_panda)/launch/move_group.launch">
+    <arg name="allow_trajectory_execution" value="$(arg allow_trajectory_execution)"/>
+    <arg name="fake_execution" value="$(arg fake_execution)"/>
+    <arg name="info" value="true"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include> -->
+
+  <!-- Run Rviz and load the default config to see the state of the move_group node -->
+  <include file="$(find robotiq_3f_rviz_moveit_panda)/launch/moveit_rviz.launch">
+    <arg name="debug" value="$(arg debug)"/>
+    <arg name="config" value="true"/>
+  </include>
+
+  <!--<node name="demo_scene_loader" pkg="franka_moveit" type="create_demo_planning_scene.py"
+	respawn="false" output="screen" />
+  <include file="$(find gazebo2rviz)/launch/gazebo2rviz.launch"/>-->
+
+</launch>

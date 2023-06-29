@@ -15,6 +15,7 @@
   <exec_depend>robotiq_3f_gripper_joint_state_publisher</exec_depend>
   <exec_depend>robotiq_3f_gripper_visualization</exec_depend>
   <exec_depend>robotiq_3f_rviz</exec_depend>
+  <exec_depend>robotiq_3f_rviz_moveit_panda</exec_depend>
   <exec_depend>robotiq_ft_sensor</exec_depend>
   <exec_depend>robotiq_modbus_tcp</exec_depend>
   <exec_depend>robotiq_ft_sensor</exec_depend>

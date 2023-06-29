@@ -55,7 +55,7 @@ This repo holds source code for all versions > groovy. For those versions <= gro
 
     catkin build robotiq_3f_ros_pkg
     ```
-- To spawn the robotiq dummy gripper in gazebo run: 
+2. To spawn the robotiq dummy gripper in gazebo run: 
 
     ```bash
     roslaunch robotiq_3f_gripper_articulated_gazebo robotiq_gripper_empty_world.launch
@@ -119,3 +119,7 @@ This repo holds source code for all versions > groovy. For those versions <= gro
             rosservice call /robotiq_3f_gripper/set_position 150
             rosservice call /robotiq_3f_gripper/set_position 0
             ```
+3. to spawn robotiq3f moveit with franka panda (not yet fully implemented):\
+    ```bash
+    roslaunch robotiq_3f_rviz_moveit_panda panda_robotiq3f_moveit.launch
+    ```

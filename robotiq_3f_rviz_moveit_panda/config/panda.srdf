@@ -27,7 +27,9 @@
         <joint name="panda_joint6" />
         <joint name="panda_joint7" />
         <joint name="panda_joint8" />
+        <!-- <joint name="robotiq_hand_joint" /> ? -->
         <!-- <joint name="panda_hithand_joint" /> -->
+
     </group>
     <!-- <group name="hithand">
         <link name="base_link_hithand" />
@@ -72,8 +74,50 @@
         <joint name="Right_Thumb_2" />
         <joint name="Right_Thumb_3" />
     </group> -->
+    <group name="robotiq_hand">
+        <joint name="palm_finger_1_joint " />
+        <joint name="finger_1_joint_1 " />
+        <joint name="finger_1_joint_2" />
+        <joint name="finger_1_joint_3" />
+        <!-- <joint name="finger_1_joint_paradistal_hinge" />
+        <joint name="finger_1_joint_median_actuating_hinge" />
+        <joint name="finger_1_joint_median_actuating_hinge_median_bar" />
+        <joint name="finger_1_joint_paramedian_hinge" />
+        <joint name="finger_1_joint_paramedian_hinge_median_bar_underactuated" />
+        <joint name="finger_1_joint_paraproximal_actuating_hinge" />
+        <joint name="finger_1_joint_paraproximal_bar" />
+        <joint name="finger_1_joint_proximal_actuating_hinge" />
+        <joint name="finger_1_joint_proximal_actuating_bar" /> -->
+        <joint name="palm_finger_2_joint" />
+        <joint name="finger_2_joint_1" />
+        <joint name="finger_2_joint_2" />
+        <joint name="finger_2_joint_3" />
+        <!-- <joint name="finger_2_joint_paradistal_hinge" />
+        <joint name="finger_2_joint_median_actuating_hinge" />
+        <joint name="finger_2_joint_median_actuating_hinge_median_bar" />
+        <joint name="finger_2_joint_paramedian_hinge" />
+        <joint name="finger_2_joint_paramedian_hinge_median_bar_underactuated" />
+        <joint name="finger_2_joint_paraproximal_actuating_hinge" />
+        <joint name="finger_2_joint_paraproximal_bar" />
+        <joint name="finger_2_joint_proximal_actuating_hinge" />
+        <joint name="finger_2_joint_proximal_actuating_bar" /> -->
+        <joint name="palm_finger_middle_joint" />
+        <joint name="finger_middle_joint_1" />
+        <joint name="finger_middle_joint_2" />
+        <joint name="finger_middle_joint_3" />
+        <!-- <joint name="finger_middle_joint_paradistal_hinge" />
+        <joint name="finger_middle_joint_median_actuating_hinge" />
+        <joint name="finger_middle_joint_median_actuating_hinge_median_bar" />
+        <joint name="finger_middle_joint_paramedian_hinge" />
+        <joint name="finger_middle_joint_paramedian_hinge_median_bar_underactuated" />
+        <joint name="finger_middle_joint_paraproximal_actuating_hinge" />
+        <joint name="finger_middle_joint_paraproximal_bar" />
+        <joint name="finger_middle_joint_proximal_actuating_hinge" />
+        <joint name="finger_middle_joint_proximal_actuating_bar" /> -->
+    </group>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <!-- <end_effector name="hand_eef" parent_link="panda_link8" group="hithand" parent_group="panda_arm" /> -->
+    <end_effector name="hand_eef" parent_link="panda_link8" group="robotiq_hand" parent_group="panda_arm" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="panda_link0" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->

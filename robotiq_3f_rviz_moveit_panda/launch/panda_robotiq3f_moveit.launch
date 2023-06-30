@@ -17,12 +17,12 @@
   
   <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers
 	configured by default) -->
-  <!-- <include file="$(find robotiq_3f_rviz_moveit_panda)/launch/move_group.launch">
+  <include file="$(find robotiq_3f_rviz_moveit_panda)/launch/move_group.launch">
     <arg name="allow_trajectory_execution" value="$(arg allow_trajectory_execution)"/>
     <arg name="fake_execution" value="$(arg fake_execution)"/>
     <arg name="info" value="true"/>
     <arg name="debug" value="$(arg debug)"/>
-  </include> -->
+  </include>
 
   <!-- Run Rviz and load the default config to see the state of the move_group node -->
   <include file="$(find robotiq_3f_rviz_moveit_panda)/launch/moveit_rviz.launch">

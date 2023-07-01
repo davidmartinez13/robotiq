@@ -102,8 +102,8 @@ void RobotiqHandPlugin::Load(gazebo::physics::ModelPtr _parent,
   gzlog << "Initialized the joint state vector" << std::endl;
 
   // ROS topic names.
-  this->topicCommand = prefix + std::string("hand/command");
-  this->topicState = prefix + std::string("hand/state");
+  this->topicCommand = prefix + std::string("robotiq3f/command");
+  this->topicState = prefix + std::string("robotiq3f/state");
   gzlog << "Using control topic " << this->topicCommand << std::endl;
 
   for (int i = 0; i < this->NumJoints; ++i)
@@ -163,7 +163,7 @@ void RobotiqHandPlugin::Load(gazebo::physics::ModelPtr _parent,
   // Broadcast joint state.
   this->pubJointStatesQueue = this->pmq.addPub<sensor_msgs::JointState>();
   this->pubJointStates = this->rosNode->advertise<sensor_msgs::JointState>(
-    this->prefix + std::string("hand/joint_states"), 10);
+    this->prefix + std::string("robotiq3f/joint_states"), 10);
 
   // Subscribe to user published handle control commands.
   ros::SubscribeOptions handleCommandSo =

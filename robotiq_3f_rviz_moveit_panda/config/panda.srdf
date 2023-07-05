@@ -27,58 +27,62 @@
         <joint name="panda_joint6" />
         <joint name="panda_joint7" />
         <joint name="panda_joint8" />
-        <!-- <joint name="robotiq_hand_joint" /> ? -->
+        <!-- <joint name="hand_joint" /> ? -->
         <!-- <joint name="panda_hithand_joint" /> -->
-
     </group>
-    <!-- <group name="hithand">
-        <link name="base_link_hithand" />
-        <link name="Right_Index_Basecover" />
-        <link name="Right_Index_Phaprox" />
-        <link name="Right_Index_Phamed" />
-        <link name="Right_Index_Phadist" />
-        <link name="Right_Little_Basecover" />
-        <link name="Right_Little_Phaprox" />
-        <link name="Right_Little_Phamed" />
-        <link name="Right_Little_Phadist" />
-        <link name="Right_Middle_Basecover" />
-        <link name="Right_Middle_Phaprox" />
-        <link name="Right_Middle_Phamed" />
-        <link name="Right_Middle_Phadist" />
-        <link name="Right_Ring_Basecover" />
-        <link name="Right_Ring_Phaprox" />
-        <link name="Right_Ring_Phamed" />
-        <link name="Right_Ring_Phadist" />
-        <link name="Right_Thumb_Basecover" />
-        <link name="Right_Thumb_Phaprox" />
-        <link name="Right_Thumb_Phamed" />
-        <link name="Right_Thumb_Phadist" />
-        <joint name="Right_Index_0" />
-        <joint name="Right_Index_1" />
-        <joint name="Right_Index_2" />
-        <joint name="Right_Index_3" />
-        <joint name="Right_Little_0" />
-        <joint name="Right_Little_1" />
-        <joint name="Right_Little_2" />
-        <joint name="Right_Little_3" />
-        <joint name="Right_Middle_0" />
-        <joint name="Right_Middle_1" />
-        <joint name="Right_Middle_2" />
-        <joint name="Right_Middle_3" />
-        <joint name="Right_Ring_0" />
-        <joint name="Right_Ring_1" />
-        <joint name="Right_Ring_2" />
-        <joint name="Right_Ring_3" />
-        <joint name="Right_Thumb_0" />
-        <joint name="Right_Thumb_1" />
-        <joint name="Right_Thumb_2" />
-        <joint name="Right_Thumb_3" />
-    </group> -->
     <group name="robotiq_hand">
+        <link name="palm" />
+        <link name="finger_1_link_0" />
+        <link name="finger_1_link_1" />
+        <link name="finger_1_link_2" />
+        <link name="finger_1_link_3" />
+        <link name="finger_1_link_paradistal_hinge" />
+        <link name="finger_1_link_median_actuating_hinge" />
+        <link name="finger_1_link_median_bar" />
+        <link name="finger_1_link_paramedian_hinge" />
+        <link name="finger_1_link_median_bar_underactuated" />
+        <link name="finger_1_link_paraproximal_actuating_hinge" />
+        <link name="finger_1_link_paraproximal_bar" />
+        <link name="finger_1_link_proximal_actuating_hinge" />
+        <link name="finger_1_link_proximal_actuating_bar" />
+        <link name="finger_2_link_0" />
+        <link name="finger_2_link_1" />
+        <link name="finger_2_link_2" />
+        <link name="finger_2_link_3" />
+        <link name="finger_2_link_paradistal_hinge" />
+        <link name="finger_2_link_median_actuating_hinge" />
+        <link name="finger_2_link_median_bar" />
+        <link name="finger_2_link_paramedian_hinge" />
+        <link name="finger_2_link_median_bar_underactuated" />
+        <link name="finger_2_link_paraproximal_actuating_hinge" />
+        <link name="finger_2_link_paraproximal_bar" />
+        <link name="finger_2_link_proximal_actuating_hinge" />
+        <link name="finger_2_link_proximal_actuating_bar" />
+        <link name="finger_middle_link_0" />
+        <link name="finger_middle_link_1" />
+        <link name="finger_middle_link_2" />
+        <link name="finger_middle_link_3" />
+        <link name="finger_middle_link_paradistal_hinge" />
+        <link name="finger_middle_link_median_actuating_hinge" />
+        <link name="finger_middle_link_median_bar" />
+        <link name="finger_middle_link_paramedian_hinge" />
+        <link name="finger_middle_link_median_bar_underactuated" />
+        <link name="finger_middle_link_paraproximal_actuating_hinge" />
+        <link name="finger_middle_link_paraproximal_bar" />
+        <link name="finger_middle_link_proximal_actuating_hinge" />
+        <link name="finger_middle_link_proximal_actuating_bar" />
         <joint name="palm_finger_1_joint " />
         <joint name="finger_1_joint_1 " />
         <joint name="finger_1_joint_2" />
         <joint name="finger_1_joint_3" />
+        <joint name="palm_finger_2_joint" />
+        <joint name="finger_2_joint_1" />
+        <joint name="finger_2_joint_2" />
+        <joint name="finger_2_joint_3" />
+        <joint name="palm_finger_middle_joint" />
+        <joint name="finger_middle_joint_1" />
+        <joint name="finger_middle_joint_2" />
+        <joint name="finger_middle_joint_3" />
         <!-- <joint name="finger_1_joint_paradistal_hinge" />
         <joint name="finger_1_joint_median_actuating_hinge" />
         <joint name="finger_1_joint_median_actuating_hinge_median_bar" />
@@ -88,10 +92,6 @@
         <joint name="finger_1_joint_paraproximal_bar" />
         <joint name="finger_1_joint_proximal_actuating_hinge" />
         <joint name="finger_1_joint_proximal_actuating_bar" /> -->
-        <joint name="palm_finger_2_joint" />
-        <joint name="finger_2_joint_1" />
-        <joint name="finger_2_joint_2" />
-        <joint name="finger_2_joint_3" />
         <!-- <joint name="finger_2_joint_paradistal_hinge" />
         <joint name="finger_2_joint_median_actuating_hinge" />
         <joint name="finger_2_joint_median_actuating_hinge_median_bar" />
@@ -101,10 +101,6 @@
         <joint name="finger_2_joint_paraproximal_bar" />
         <joint name="finger_2_joint_proximal_actuating_hinge" />
         <joint name="finger_2_joint_proximal_actuating_bar" /> -->
-        <joint name="palm_finger_middle_joint" />
-        <joint name="finger_middle_joint_1" />
-        <joint name="finger_middle_joint_2" />
-        <joint name="finger_middle_joint_3" />
         <!-- <joint name="finger_middle_joint_paradistal_hinge" />
         <joint name="finger_middle_joint_median_actuating_hinge" />
         <joint name="finger_middle_joint_median_actuating_hinge_median_bar" />
@@ -119,407 +115,8 @@
     <!-- <end_effector name="hand_eef" parent_link="panda_link8" group="hithand" parent_group="panda_arm" /> -->
     <end_effector name="hand_eef" parent_link="panda_link8" group="robotiq_hand" parent_group="panda_arm" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
-    <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="panda_link0" />
-    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
-    <!-- <disable_collisions link1="Right_Index_Basecover" link2="Right_Index_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Index_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Index_Phaprox" reason="Adjacent" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Little_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Little_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Little_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Little_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Middle_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Middle_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Middle_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Middle_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Ring_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Ring_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Ring_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Ring_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Thumb_Phamed" reason="User" />
-    <disable_collisions link1="Right_Index_Basecover" link2="Right_Thumb_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="base_link_hithand" reason="Adjacent" /> -->
-    <!-- <disable_collisions link1="Right_Index_Basecover" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Index_Basecover" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Index_Basecover" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Index_Basecover" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="panda_link4" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Index_Basecover" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Index_Basecover" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Index_Phamed" reason="Adjacent" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Index_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Little_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Little_Phadist" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Little_Phamed" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Little_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Middle_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Middle_Phadist" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Middle_Phamed" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Middle_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Ring_Basecover" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Ring_Phadist" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Ring_Phamed" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Ring_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Thumb_Basecover" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Thumb_Phamed" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="Right_Thumb_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Index_Phadist" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Index_Phadist" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Index_Phadist" link2="panda_link4" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Index_Phadist" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Index_Phadist" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Index_Phaprox" reason="Adjacent" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Little_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Little_Phadist" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Little_Phamed" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Little_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Middle_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Middle_Phadist" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Middle_Phamed" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Middle_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Ring_Basecover" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Ring_Phadist" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Ring_Phamed" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Ring_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Thumb_Phamed" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="Right_Thumb_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Index_Phamed" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Index_Phamed" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Index_Phamed" link2="panda_link4" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Index_Phamed" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Index_Phamed" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Little_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Little_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Little_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Little_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Middle_Basecover" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Middle_Phadist" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Middle_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Middle_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Ring_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Ring_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Ring_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Ring_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Thumb_Phamed" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="Right_Thumb_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="panda_link4" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Index_Phaprox" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Little_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Little_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Little_Phaprox" reason="Adjacent" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Middle_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Middle_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Middle_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Middle_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Ring_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Ring_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Ring_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Ring_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Thumb_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Thumb_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="Right_Thumb_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="base_link_hithand" reason="Adjacent" />
-    <disable_collisions link1="Right_Little_Basecover" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Little_Basecover" link2="panda_link1" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="panda_link2" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="panda_link4" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Little_Basecover" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Little_Basecover" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Little_Phamed" reason="Adjacent" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Little_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Middle_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Middle_Phadist" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Middle_Phamed" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Middle_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Ring_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Ring_Phadist" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Ring_Phamed" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Ring_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Thumb_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Little_Phadist" link2="Right_Thumb_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Little_Phadist" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Little_Phadist" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Little_Phadist" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Little_Phadist" link2="panda_link4" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Little_Phadist" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Little_Phadist" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Little_Phaprox" reason="Adjacent" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Middle_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Middle_Phadist" reason="User" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Middle_Phamed" reason="User" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Middle_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Ring_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Ring_Phadist" reason="User" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Ring_Phamed" reason="User" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Ring_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Thumb_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Little_Phamed" link2="Right_Thumb_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Little_Phamed" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Little_Phamed" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Little_Phamed" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Little_Phamed" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Little_Phamed" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Little_Phamed" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Little_Phamed" link2="panda_link4" reason="Default" />
-    <disable_collisions link1="Right_Little_Phamed" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Little_Phamed" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Little_Phamed" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Middle_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Middle_Phadist" reason="User" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Middle_Phamed" reason="User" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Middle_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Ring_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Ring_Phadist" reason="User" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Ring_Phamed" reason="User" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Ring_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Thumb_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="Right_Thumb_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="panda_link4" reason="Never" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="panda_link5" reason="Default" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Little_Phaprox" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="Right_Middle_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="Right_Middle_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="Right_Middle_Phaprox" reason="Adjacent" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="Right_Ring_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="Right_Ring_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="Right_Ring_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="Right_Ring_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="Right_Thumb_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="Right_Thumb_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="base_link_hithand" reason="Adjacent" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="panda_link4" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="panda_link5" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Middle_Basecover" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="Right_Middle_Phamed" reason="Adjacent" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="Right_Middle_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="Right_Ring_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="Right_Ring_Phadist" reason="User" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="Right_Ring_Phamed" reason="User" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="Right_Ring_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="Right_Thumb_Phamed" reason="User" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="Right_Thumb_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="panda_link4" reason="Default" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phadist" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="Right_Middle_Phaprox" reason="Adjacent" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="Right_Ring_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="Right_Ring_Phadist" reason="User" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="Right_Ring_Phamed" reason="User" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="Right_Ring_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="Right_Thumb_Phamed" reason="User" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="Right_Thumb_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="panda_link4" reason="User" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phamed" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="Right_Ring_Basecover" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="Right_Ring_Phadist" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="Right_Ring_Phamed" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="Right_Ring_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="Right_Thumb_Phamed" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="Right_Thumb_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="panda_link4" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Middle_Phaprox" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="Right_Ring_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="Right_Ring_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="Right_Ring_Phaprox" reason="Adjacent" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="Right_Thumb_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="Right_Thumb_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="base_link_hithand" reason="Adjacent" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="panda_link4" reason="Never" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="panda_link5" reason="Never" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Ring_Basecover" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="Right_Ring_Phamed" reason="Adjacent" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="Right_Ring_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="Right_Thumb_Phamed" reason="User" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="Right_Thumb_Phaprox" reason="User" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="panda_link3" reason="User" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="panda_link4" reason="Default" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phadist" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="Right_Ring_Phaprox" reason="Adjacent" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="Right_Thumb_Phamed" reason="User" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="Right_Thumb_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="panda_link4" reason="Default" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phamed" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="Right_Thumb_Basecover" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="Right_Thumb_Phadist" reason="User" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="Right_Thumb_Phamed" reason="User" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="Right_Thumb_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="panda_link4" reason="User" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Ring_Phaprox" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="Right_Thumb_Phadist" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="Right_Thumb_Phamed" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="Right_Thumb_Phaprox" reason="Adjacent" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="base_link_hithand" reason="Adjacent" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="panda_link1" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="panda_link4" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Basecover" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="Right_Thumb_Phamed" reason="Adjacent" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="Right_Thumb_Phaprox" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="panda_link4" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phadist" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phamed" link2="Right_Thumb_Phaprox" reason="Adjacent" />
-    <disable_collisions link1="Right_Thumb_Phamed" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phamed" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phamed" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phamed" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phamed" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phamed" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phamed" link2="panda_link4" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phamed" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phamed" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phamed" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phaprox" link2="base_link_hithand" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phaprox" link2="camera_link" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phaprox" link2="panda_link0" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phaprox" link2="panda_link1" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phaprox" link2="panda_link2" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phaprox" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phaprox" link2="panda_link4" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phaprox" link2="panda_link5" reason="User" />
-    <disable_collisions link1="Right_Thumb_Phaprox" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="Right_Thumb_Phaprox" link2="panda_link7" reason="Never" />
-    <disable_collisions link1="base_link_hithand" link2="camera_link" reason="Never" />
-    <disable_collisions link1="base_link_hithand" link2="panda_link0" reason="Never" />
-    <disable_collisions link1="base_link_hithand" link2="panda_link1" reason="User" />
-    <disable_collisions link1="base_link_hithand" link2="panda_link2" reason="Never" />
-    <disable_collisions link1="base_link_hithand" link2="panda_link3" reason="Never" />
-    <disable_collisions link1="base_link_hithand" link2="panda_link4" reason="Never" />
-    <disable_collisions link1="base_link_hithand" link2="panda_link5" reason="Never" />
-    <disable_collisions link1="base_link_hithand" link2="panda_link6" reason="Never" />
-    <disable_collisions link1="base_link_hithand" link2="panda_link7" reason="Adjacent" /> -->
+    <!-- <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="panda_link0" /> -->
+
     <disable_collisions link1="camera_link" link2="panda_link0" reason="Adjacent" />
     <disable_collisions link1="camera_link" link2="panda_link1" reason="Never" />
     <disable_collisions link1="camera_link" link2="panda_link2" reason="Never" />
@@ -556,4 +153,171 @@
     <disable_collisions link1="panda_link5" link2="panda_link6" reason="Adjacent" />
     <disable_collisions link1="panda_link5" link2="panda_link7" reason="Default" />
     <disable_collisions link1="panda_link6" link2="panda_link7" reason="Adjacent" />
+
+    <disable_collisions link1="finger_1_link_0" link2="finger_1_link_1" reason="Adjacent" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_middle_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="palm" reason="Adjacent" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_2" reason="Adjacent" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="palm" reason="Default" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_1_link_3" reason="Adjacent" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="palm" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_2_link_1" reason="Adjacent" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_middle_link_3" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="palm" reason="Adjacent" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_2_link_2" reason="Adjacent" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="palm" reason="Default" />
+    <disable_collisions link1="finger_2_link_2" link2="finger_2_link_3" reason="Adjacent" />
+    <disable_collisions link1="finger_2_link_2" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="palm" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="finger_middle_link_1" reason="Adjacent" />
+    <disable_collisions link1="finger_middle_link_0" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="finger_middle_link_3" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="palm" reason="Adjacent" />
+    <disable_collisions link1="finger_middle_link_1" link2="finger_middle_link_2" reason="Adjacent" />
+    <disable_collisions link1="finger_middle_link_1" link2="finger_middle_link_3" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="palm" reason="Default" />
+    <disable_collisions link1="finger_middle_link_2" link2="finger_middle_link_3" reason="Adjacent" />
+    <disable_collisions link1="finger_middle_link_2" link2="palm" reason="Never" />
+    
+    <disable_collisions link1="finger_1_link_2" link2="finger_1_link_median_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_1_link_median_bar" reason="Default" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_1_link_median_bar_underactuated" reason="Default" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_1_link_paradistal_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_3" link2="finger_1_link_median_bar" reason="Default" />
+    <disable_collisions link1="finger_1_link_3" link2="finger_1_link_median_bar_underactuated" reason="Default" />
+    <disable_collisions link1="finger_1_link_3" link2="finger_1_link_paradistal_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_median_bar_underactuated" link2="finger_1_link_paradistal_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_2_link_paraproximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_2_link_proximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_2_link_median_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_2_link_median_bar" reason="Default" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_2_link_median_bar_underactuated" reason="Default" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_2_link_paramedian_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_2_link_paraproximal_bar" reason="Default" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_2_link_proximal_actuating_bar" reason="Default" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_2_link_proximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_2" link2="finger_2_link_median_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_2" link2="finger_2_link_median_bar" reason="Default" />
+    <disable_collisions link1="finger_2_link_2" link2="finger_2_link_median_bar_underactuated" reason="Default" />
+    <disable_collisions link1="finger_2_link_2" link2="finger_2_link_paradistal_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_2" link2="finger_2_link_paramedian_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_2" link2="finger_2_link_paraproximal_bar" reason="Default" />
+    <disable_collisions link1="finger_2_link_2" link2="finger_2_link_proximal_actuating_bar" reason="Default" />
+    <disable_collisions link1="finger_2_link_2" link2="panda_link4" reason="Default" />
+    <disable_collisions link1="finger_2_link_3" link2="finger_2_link_median_bar" reason="Default" />
+    <disable_collisions link1="finger_2_link_3" link2="finger_2_link_median_bar_underactuated" reason="Default" />
+    <disable_collisions link1="finger_2_link_3" link2="finger_2_link_paradistal_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_3" link2="panda_link4" reason="Default" />
+    <disable_collisions link1="finger_2_link_median_bar" link2="panda_link4" reason="Default" />
+    <disable_collisions link1="finger_2_link_median_bar_underactuated" link2="finger_2_link_paradistal_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_median_bar_underactuated" link2="finger_2_link_paramedian_hinge" reason="Default" />
+    <disable_collisions link1="finger_2_link_paradistal_hinge" link2="panda_link4" reason="Default" />
+    <disable_collisions link1="finger_2_link_paraproximal_actuating_hinge" link2="finger_2_link_paraproximal_bar" reason="Default" />
+    <disable_collisions link1="finger_2_link_proximal_actuating_bar" link2="finger_2_link_proximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_0" link2="finger_middle_link_proximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_1" link2="finger_middle_link_median_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_1" link2="finger_middle_link_median_bar" reason="Default" />
+    <disable_collisions link1="finger_middle_link_1" link2="finger_middle_link_proximal_actuating_bar" reason="Default" />
+    <disable_collisions link1="finger_middle_link_1" link2="finger_middle_link_proximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_2" link2="finger_middle_link_median_bar_underactuated" reason="Default" />
+    <disable_collisions link1="finger_middle_link_2" link2="finger_middle_link_paradistal_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_2" link2="finger_middle_link_paramedian_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_2" link2="finger_middle_link_paraproximal_bar" reason="Default" />
+    <disable_collisions link1="finger_middle_link_3" link2="finger_middle_link_median_bar" reason="Default" />
+    <disable_collisions link1="finger_middle_link_median_bar_underactuated" link2="finger_middle_link_paradistal_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_median_bar_underactuated" link2="finger_middle_link_paramedian_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_paraproximal_actuating_hinge" link2="finger_middle_link_paraproximal_bar" reason="Default" />
+    <disable_collisions link1="finger_middle_link_proximal_actuating_bar" link2="finger_middle_link_proximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_proximal_actuating_hinge" link2="palm" reason="Default" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_1_link_paraproximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_1_link_proximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_0" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_median_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_median_bar" reason="Default" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_median_bar_underactuated" reason="Default" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_paramedian_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_paraproximal_bar" reason="Default" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_proximal_actuating_bar" reason="Default" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_proximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_1" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_1_link_paramedian_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_1_link_paraproximal_bar" reason="Default" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_1_link_proximal_actuating_bar" reason="Default" />
+    <disable_collisions link1="finger_1_link_2" link2="panda_link4" reason="Default" />
+    <disable_collisions link1="finger_1_link_2" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_1_link_3" link2="panda_link4" reason="Default" />
+    <disable_collisions link1="finger_1_link_3" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_1_link_median_bar" link2="panda_link4" reason="Default" />
+    <disable_collisions link1="finger_1_link_median_bar" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_1_link_median_bar_underactuated" link2="finger_1_link_paramedian_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_median_bar_underactuated" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_1_link_paradistal_hinge" link2="panda_link4" reason="Default" />
+    <disable_collisions link1="finger_1_link_paradistal_hinge" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_1_link_paraproximal_actuating_hinge" link2="finger_1_link_paraproximal_bar" reason="Default" />
+    <disable_collisions link1="finger_1_link_paraproximal_actuating_hinge" link2="palm" reason="Default" />
+    <disable_collisions link1="finger_1_link_paraproximal_actuating_hinge" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_1_link_proximal_actuating_bar" link2="finger_1_link_proximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_proximal_actuating_hinge" link2="palm" reason="Default" />
+    <disable_collisions link1="finger_1_link_proximal_actuating_hinge" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_2_link_1" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_2_link_2" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_2_link_3" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_2_link_median_actuating_hinge" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_2_link_median_bar" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_2_link_paradistal_hinge" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_2_link_paraproximal_actuating_hinge" link2="palm" reason="Default" />
+    <disable_collisions link1="finger_2_link_proximal_actuating_bar" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_2_link_proximal_actuating_hinge" link2="palm" reason="Default" />
+    <disable_collisions link1="finger_middle_link_0" link2="finger_middle_link_paraproximal_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_1" link2="finger_middle_link_median_bar_underactuated" reason="Default" />
+    <disable_collisions link1="finger_middle_link_1" link2="finger_middle_link_paramedian_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_1" link2="finger_middle_link_paraproximal_bar" reason="Default" />
+    <disable_collisions link1="finger_middle_link_2" link2="finger_middle_link_median_actuating_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_2" link2="finger_middle_link_median_bar" reason="Default" />
+    <disable_collisions link1="finger_middle_link_2" link2="finger_middle_link_proximal_actuating_bar" reason="Default" />
+    <disable_collisions link1="finger_middle_link_3" link2="finger_middle_link_median_bar_underactuated" reason="Default" />
+    <disable_collisions link1="finger_middle_link_3" link2="finger_middle_link_paradistal_hinge" reason="Default" />
+    <disable_collisions link1="finger_middle_link_paraproximal_actuating_hinge" link2="palm" reason="Default" />
+    <disable_collisions link1="palm" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_2_link_median_bar_underactuated" link2="panda_link5" reason="Default" />
+    <disable_collisions link1="finger_2_link_paraproximal_bar" link2="panda_link5" reason="Default" />
+
+
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_paradistal_hinge" reason="Default" />
+    <disable_collisions link1="finger_1_link_median_bar_underactuated" link2="finger_1_link_paradistal_hinge" reason="Default" />
+
 </robot>

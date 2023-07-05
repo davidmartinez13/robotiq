@@ -8,7 +8,7 @@ Panels:
         - /TF1
         - /TF1/Frames1
       Splitter Ratio: 0.5
-    Tree Height: 229
+    Tree Height: 170
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -28,6 +28,8 @@ Panels:
     Name: Time
     SyncMode: 0
     SyncSource: PointCloud2
+  - Class: robotiq/Robotiq3FingerPanel
+    Name: Robotiq3FingerPanel
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -86,111 +88,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          # Right_Index_Basecover:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Index_Phadist:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Index_Phamed:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Index_Phaprox:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Little_Basecover:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Little_Phadist:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Little_Phamed:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Little_Phaprox:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Middle_Basecover:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Middle_Phadist:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Middle_Phamed:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Middle_Phaprox:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Ring_Basecover:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Ring_Phadist:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Ring_Phamed:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Ring_Phaprox:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Thumb_Basecover:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Thumb_Phadist:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Thumb_Phamed:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Thumb_Phaprox:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # base_link_hithand:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
           camera_bottom_screw_frame:
             Alpha: 1
             Show Axes: false
@@ -232,10 +129,206 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          # palm_link_hithand:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
+          finger_1_link_0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_median_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_median_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_median_bar_underactuated:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_paradistal_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_paramedian_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_paraproximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_paraproximal_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_proximal_actuating_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_proximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_median_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_median_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_median_bar_underactuated:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_paradistal_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_paramedian_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_paraproximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_paraproximal_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_proximal_actuating_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_proximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_median_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_median_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_median_bar_underactuated:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_paradistal_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_paramedian_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_paraproximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_paraproximal_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_proximal_actuating_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_proximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          palm:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           panda_link0:
             Alpha: 1
             Show Axes: false
@@ -329,111 +422,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          # Right_Index_Basecover:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Index_Phadist:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Index_Phamed:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Index_Phaprox:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Little_Basecover:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Little_Phadist:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Little_Phamed:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Little_Phaprox:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Middle_Basecover:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Middle_Phadist:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Middle_Phamed:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Middle_Phaprox:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Ring_Basecover:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Ring_Phadist:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Ring_Phamed:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Ring_Phaprox:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Thumb_Basecover:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Thumb_Phadist:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Thumb_Phamed:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # Right_Thumb_Phaprox:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
-          # base_link_hithand:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
-          #   Value: true
           camera_bottom_screw_frame:
             Alpha: 1
             Show Axes: false
@@ -475,10 +463,206 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          # palm_link_hithand:
-          #   Alpha: 1
-          #   Show Axes: false
-          #   Show Trail: false
+          finger_1_link_0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_median_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_median_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_median_bar_underactuated:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_paradistal_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_paramedian_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_paraproximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_paraproximal_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_proximal_actuating_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_1_link_proximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_median_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_median_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_median_bar_underactuated:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_paradistal_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_paramedian_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_paraproximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_paraproximal_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_proximal_actuating_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_2_link_proximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_median_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_median_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_median_bar_underactuated:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_paradistal_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_paramedian_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_paraproximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_paraproximal_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_proximal_actuating_bar:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          finger_middle_link_proximal_actuating_hinge:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          palm:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           panda_link0:
             Alpha: 1
             Show Axes: false
@@ -537,50 +721,8 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        # Right_Index_Basecover:
-        #   Value: false
-        # Right_Index_Phadist:
-        #   Value: false
-        # Right_Index_Phamed:
-        #   Value: false
-        # Right_Index_Phaprox:
-        #   Value: false
-        # Right_Little_Basecover:
-        #   Value: false
-        # Right_Little_Phadist:
-        #   Value: false
-        # Right_Little_Phamed:
-        #   Value: false
-        # Right_Little_Phaprox:
-        #   Value: false
-        # Right_Middle_Basecover:
-        #   Value: false
-        # Right_Middle_Phadist:
-        #   Value: false
-        # Right_Middle_Phamed:
-        #   Value: false
-        # Right_Middle_Phaprox:
-        #   Value: false
-        # Right_Ring_Basecover:
-        #   Value: false
-        # Right_Ring_Phadist:
-        #   Value: false
-        # Right_Ring_Phamed:
-        #   Value: false
-        # Right_Ring_Phaprox:
-        #   Value: false
-        # Right_Thumb_Basecover:
-        #   Value: false
-        # Right_Thumb_Phadist:
-        #   Value: false
-        # Right_Thumb_Phamed:
-        #   Value: false
-        # Right_Thumb_Phaprox:
-        #   Value: false
-        # base:
-        #   Value: false
-        # base_link_hithand:
-        #   Value: true
+        base:
+          Value: true
         camera_bottom_screw_frame:
           Value: false
         camera_color_frame:
@@ -601,1998 +743,32 @@ Visualization Manager:
           Value: false
         camera_right_ir_optical_frame:
           Value: false
-        filt_0:
+        finger_1_link_0:
           Value: true
-        filt_1:
+        finger_1_link_1:
           Value: true
-        filt_10:
+        finger_1_link_2:
           Value: true
-        filt_11:
+        finger_1_link_3:
           Value: true
-        filt_12:
+        finger_2_link_0:
           Value: true
-        filt_13:
+        finger_2_link_1:
           Value: true
-        filt_14:
+        finger_2_link_2:
           Value: true
-        filt_15:
+        finger_2_link_3:
           Value: true
-        filt_16:
+        finger_middle_link_0:
           Value: true
-        filt_17:
+        finger_middle_link_1:
           Value: true
-        filt_18:
+        finger_middle_link_2:
           Value: true
-        filt_19:
+        finger_middle_link_3:
           Value: true
-        filt_2:
+        palm:
           Value: true
-        filt_20:
-          Value: true
-        filt_21:
-          Value: true
-        filt_22:
-          Value: true
-        filt_23:
-          Value: true
-        filt_24:
-          Value: true
-        filt_25:
-          Value: true
-        filt_26:
-          Value: true
-        filt_27:
-          Value: true
-        filt_28:
-          Value: true
-        filt_29:
-          Value: true
-        filt_3:
-          Value: true
-        filt_30:
-          Value: true
-        filt_31:
-          Value: true
-        filt_32:
-          Value: true
-        filt_33:
-          Value: true
-        filt_34:
-          Value: true
-        filt_35:
-          Value: true
-        filt_36:
-          Value: true
-        filt_37:
-          Value: true
-        filt_38:
-          Value: true
-        filt_39:
-          Value: true
-        filt_4:
-          Value: true
-        filt_40:
-          Value: true
-        filt_41:
-          Value: true
-        filt_42:
-          Value: true
-        filt_43:
-          Value: true
-        filt_44:
-          Value: true
-        filt_45:
-          Value: true
-        filt_46:
-          Value: true
-        filt_47:
-          Value: true
-        filt_48:
-          Value: true
-        filt_49:
-          Value: true
-        filt_5:
-          Value: true
-        filt_50:
-          Value: true
-        filt_51:
-          Value: true
-        filt_52:
-          Value: true
-        filt_53:
-          Value: true
-        filt_54:
-          Value: true
-        filt_55:
-          Value: true
-        filt_56:
-          Value: true
-        filt_57:
-          Value: true
-        filt_58:
-          Value: true
-        filt_59:
-          Value: true
-        filt_6:
-          Value: true
-        filt_60:
-          Value: true
-        filt_61:
-          Value: true
-        filt_62:
-          Value: true
-        filt_63:
-          Value: true
-        filt_64:
-          Value: true
-        filt_65:
-          Value: true
-        filt_66:
-          Value: true
-        filt_67:
-          Value: true
-        filt_68:
-          Value: true
-        filt_69:
-          Value: true
-        filt_7:
-          Value: true
-        filt_70:
-          Value: true
-        filt_8:
-          Value: true
-        filt_9:
-          Value: true
-        heu_0:
-          Value: true
-        heu_1:
-          Value: true
-        heu_10:
-          Value: true
-        heu_100:
-          Value: true
-        heu_101:
-          Value: true
-        heu_102:
-          Value: true
-        heu_103:
-          Value: true
-        heu_104:
-          Value: true
-        heu_105:
-          Value: true
-        heu_106:
-          Value: true
-        heu_107:
-          Value: true
-        heu_108:
-          Value: true
-        heu_109:
-          Value: true
-        heu_11:
-          Value: true
-        heu_110:
-          Value: true
-        heu_111:
-          Value: true
-        heu_112:
-          Value: true
-        heu_113:
-          Value: true
-        heu_114:
-          Value: true
-        heu_115:
-          Value: true
-        heu_116:
-          Value: true
-        heu_117:
-          Value: true
-        heu_118:
-          Value: true
-        heu_119:
-          Value: true
-        heu_12:
-          Value: true
-        heu_120:
-          Value: true
-        heu_121:
-          Value: true
-        heu_122:
-          Value: true
-        heu_123:
-          Value: true
-        heu_124:
-          Value: true
-        heu_125:
-          Value: true
-        heu_126:
-          Value: true
-        heu_127:
-          Value: true
-        heu_128:
-          Value: true
-        heu_129:
-          Value: true
-        heu_13:
-          Value: true
-        heu_130:
-          Value: true
-        heu_131:
-          Value: true
-        heu_132:
-          Value: true
-        heu_133:
-          Value: true
-        heu_134:
-          Value: true
-        heu_135:
-          Value: true
-        heu_136:
-          Value: true
-        heu_137:
-          Value: true
-        heu_138:
-          Value: true
-        heu_139:
-          Value: true
-        heu_14:
-          Value: true
-        heu_140:
-          Value: true
-        heu_141:
-          Value: true
-        heu_142:
-          Value: true
-        heu_143:
-          Value: true
-        heu_144:
-          Value: true
-        heu_145:
-          Value: true
-        heu_146:
-          Value: true
-        heu_147:
-          Value: true
-        heu_148:
-          Value: true
-        heu_149:
-          Value: true
-        heu_15:
-          Value: true
-        heu_150:
-          Value: true
-        heu_151:
-          Value: true
-        heu_152:
-          Value: true
-        heu_153:
-          Value: true
-        heu_154:
-          Value: true
-        heu_155:
-          Value: true
-        heu_156:
-          Value: true
-        heu_157:
-          Value: true
-        heu_158:
-          Value: true
-        heu_159:
-          Value: true
-        heu_16:
-          Value: true
-        heu_160:
-          Value: true
-        heu_161:
-          Value: true
-        heu_162:
-          Value: true
-        heu_163:
-          Value: true
-        heu_164:
-          Value: true
-        heu_165:
-          Value: true
-        heu_166:
-          Value: true
-        heu_167:
-          Value: true
-        heu_168:
-          Value: true
-        heu_169:
-          Value: true
-        heu_17:
-          Value: true
-        heu_170:
-          Value: true
-        heu_171:
-          Value: true
-        heu_172:
-          Value: true
-        heu_173:
-          Value: true
-        heu_174:
-          Value: true
-        heu_175:
-          Value: true
-        heu_176:
-          Value: true
-        heu_177:
-          Value: true
-        heu_178:
-          Value: true
-        heu_179:
-          Value: true
-        heu_18:
-          Value: true
-        heu_180:
-          Value: true
-        heu_181:
-          Value: true
-        heu_182:
-          Value: true
-        heu_183:
-          Value: true
-        heu_184:
-          Value: true
-        heu_185:
-          Value: true
-        heu_186:
-          Value: true
-        heu_187:
-          Value: true
-        heu_188:
-          Value: true
-        heu_189:
-          Value: true
-        heu_19:
-          Value: true
-        heu_190:
-          Value: true
-        heu_191:
-          Value: true
-        heu_192:
-          Value: true
-        heu_193:
-          Value: true
-        heu_194:
-          Value: true
-        heu_195:
-          Value: true
-        heu_196:
-          Value: true
-        heu_197:
-          Value: true
-        heu_198:
-          Value: true
-        heu_199:
-          Value: true
-        heu_2:
-          Value: true
-        heu_20:
-          Value: true
-        heu_200:
-          Value: true
-        heu_201:
-          Value: true
-        heu_202:
-          Value: true
-        heu_203:
-          Value: true
-        heu_204:
-          Value: true
-        heu_205:
-          Value: true
-        heu_206:
-          Value: true
-        heu_207:
-          Value: true
-        heu_208:
-          Value: true
-        heu_209:
-          Value: true
-        heu_21:
-          Value: true
-        heu_210:
-          Value: true
-        heu_211:
-          Value: true
-        heu_212:
-          Value: true
-        heu_213:
-          Value: true
-        heu_214:
-          Value: true
-        heu_215:
-          Value: true
-        heu_216:
-          Value: true
-        heu_217:
-          Value: true
-        heu_218:
-          Value: true
-        heu_219:
-          Value: true
-        heu_22:
-          Value: true
-        heu_220:
-          Value: true
-        heu_221:
-          Value: true
-        heu_222:
-          Value: true
-        heu_223:
-          Value: true
-        heu_224:
-          Value: true
-        heu_225:
-          Value: true
-        heu_226:
-          Value: true
-        heu_227:
-          Value: true
-        heu_228:
-          Value: true
-        heu_229:
-          Value: true
-        heu_23:
-          Value: true
-        heu_230:
-          Value: true
-        heu_231:
-          Value: true
-        heu_232:
-          Value: true
-        heu_233:
-          Value: true
-        heu_234:
-          Value: true
-        heu_235:
-          Value: true
-        heu_236:
-          Value: true
-        heu_237:
-          Value: true
-        heu_238:
-          Value: true
-        heu_239:
-          Value: true
-        heu_24:
-          Value: true
-        heu_240:
-          Value: true
-        heu_241:
-          Value: true
-        heu_242:
-          Value: true
-        heu_243:
-          Value: true
-        heu_244:
-          Value: true
-        heu_245:
-          Value: true
-        heu_246:
-          Value: true
-        heu_247:
-          Value: true
-        heu_248:
-          Value: true
-        heu_249:
-          Value: true
-        heu_25:
-          Value: true
-        heu_250:
-          Value: true
-        heu_251:
-          Value: true
-        heu_252:
-          Value: true
-        heu_253:
-          Value: true
-        heu_254:
-          Value: true
-        heu_255:
-          Value: true
-        heu_256:
-          Value: true
-        heu_257:
-          Value: true
-        heu_258:
-          Value: true
-        heu_259:
-          Value: true
-        heu_26:
-          Value: true
-        heu_260:
-          Value: true
-        heu_261:
-          Value: true
-        heu_262:
-          Value: true
-        heu_263:
-          Value: true
-        heu_264:
-          Value: true
-        heu_265:
-          Value: true
-        heu_266:
-          Value: true
-        heu_267:
-          Value: true
-        heu_268:
-          Value: true
-        heu_269:
-          Value: true
-        heu_27:
-          Value: true
-        heu_270:
-          Value: true
-        heu_271:
-          Value: true
-        heu_272:
-          Value: true
-        heu_273:
-          Value: true
-        heu_274:
-          Value: true
-        heu_275:
-          Value: true
-        heu_276:
-          Value: true
-        heu_277:
-          Value: true
-        heu_278:
-          Value: true
-        heu_279:
-          Value: true
-        heu_28:
-          Value: true
-        heu_280:
-          Value: true
-        heu_281:
-          Value: true
-        heu_282:
-          Value: true
-        heu_283:
-          Value: true
-        heu_284:
-          Value: true
-        heu_285:
-          Value: true
-        heu_286:
-          Value: true
-        heu_287:
-          Value: true
-        heu_288:
-          Value: true
-        heu_289:
-          Value: true
-        heu_29:
-          Value: true
-        heu_290:
-          Value: true
-        heu_291:
-          Value: true
-        heu_292:
-          Value: true
-        heu_293:
-          Value: true
-        heu_294:
-          Value: true
-        heu_295:
-          Value: true
-        heu_296:
-          Value: true
-        heu_297:
-          Value: true
-        heu_298:
-          Value: true
-        heu_299:
-          Value: true
-        heu_3:
-          Value: true
-        heu_30:
-          Value: true
-        heu_300:
-          Value: true
-        heu_301:
-          Value: true
-        heu_302:
-          Value: true
-        heu_303:
-          Value: true
-        heu_304:
-          Value: true
-        heu_305:
-          Value: true
-        heu_306:
-          Value: true
-        heu_307:
-          Value: true
-        heu_308:
-          Value: true
-        heu_309:
-          Value: true
-        heu_31:
-          Value: true
-        heu_310:
-          Value: true
-        heu_311:
-          Value: true
-        heu_312:
-          Value: true
-        heu_313:
-          Value: true
-        heu_314:
-          Value: true
-        heu_315:
-          Value: true
-        heu_316:
-          Value: true
-        heu_317:
-          Value: true
-        heu_318:
-          Value: true
-        heu_319:
-          Value: true
-        heu_32:
-          Value: true
-        heu_320:
-          Value: true
-        heu_321:
-          Value: true
-        heu_322:
-          Value: true
-        heu_323:
-          Value: true
-        heu_324:
-          Value: true
-        heu_325:
-          Value: true
-        heu_326:
-          Value: true
-        heu_327:
-          Value: true
-        heu_328:
-          Value: true
-        heu_329:
-          Value: true
-        heu_33:
-          Value: true
-        heu_330:
-          Value: true
-        heu_331:
-          Value: true
-        heu_332:
-          Value: true
-        heu_333:
-          Value: true
-        heu_334:
-          Value: true
-        heu_335:
-          Value: true
-        heu_336:
-          Value: true
-        heu_337:
-          Value: true
-        heu_338:
-          Value: true
-        heu_339:
-          Value: true
-        heu_34:
-          Value: true
-        heu_340:
-          Value: true
-        heu_341:
-          Value: true
-        heu_342:
-          Value: true
-        heu_343:
-          Value: true
-        heu_344:
-          Value: true
-        heu_345:
-          Value: true
-        heu_346:
-          Value: true
-        heu_347:
-          Value: true
-        heu_348:
-          Value: true
-        heu_349:
-          Value: true
-        heu_35:
-          Value: true
-        heu_350:
-          Value: true
-        heu_351:
-          Value: true
-        heu_352:
-          Value: true
-        heu_353:
-          Value: true
-        heu_354:
-          Value: true
-        heu_355:
-          Value: true
-        heu_356:
-          Value: true
-        heu_357:
-          Value: true
-        heu_358:
-          Value: true
-        heu_359:
-          Value: true
-        heu_36:
-          Value: true
-        heu_360:
-          Value: true
-        heu_361:
-          Value: true
-        heu_362:
-          Value: true
-        heu_363:
-          Value: true
-        heu_364:
-          Value: true
-        heu_365:
-          Value: true
-        heu_366:
-          Value: true
-        heu_367:
-          Value: true
-        heu_368:
-          Value: true
-        heu_369:
-          Value: true
-        heu_37:
-          Value: true
-        heu_370:
-          Value: true
-        heu_371:
-          Value: true
-        heu_372:
-          Value: true
-        heu_373:
-          Value: true
-        heu_374:
-          Value: true
-        heu_375:
-          Value: true
-        heu_376:
-          Value: true
-        heu_377:
-          Value: true
-        heu_378:
-          Value: true
-        heu_379:
-          Value: true
-        heu_38:
-          Value: true
-        heu_380:
-          Value: true
-        heu_381:
-          Value: true
-        heu_382:
-          Value: true
-        heu_383:
-          Value: true
-        heu_384:
-          Value: true
-        heu_385:
-          Value: true
-        heu_386:
-          Value: true
-        heu_387:
-          Value: true
-        heu_388:
-          Value: true
-        heu_389:
-          Value: true
-        heu_39:
-          Value: true
-        heu_390:
-          Value: true
-        heu_391:
-          Value: true
-        heu_392:
-          Value: true
-        heu_393:
-          Value: true
-        heu_394:
-          Value: true
-        heu_395:
-          Value: true
-        heu_396:
-          Value: true
-        heu_397:
-          Value: true
-        heu_398:
-          Value: true
-        heu_399:
-          Value: true
-        heu_4:
-          Value: true
-        heu_40:
-          Value: true
-        heu_400:
-          Value: true
-        heu_401:
-          Value: true
-        heu_402:
-          Value: true
-        heu_403:
-          Value: true
-        heu_404:
-          Value: true
-        heu_405:
-          Value: true
-        heu_406:
-          Value: true
-        heu_407:
-          Value: true
-        heu_408:
-          Value: true
-        heu_409:
-          Value: true
-        heu_41:
-          Value: true
-        heu_410:
-          Value: true
-        heu_411:
-          Value: true
-        heu_412:
-          Value: true
-        heu_413:
-          Value: true
-        heu_414:
-          Value: true
-        heu_415:
-          Value: true
-        heu_416:
-          Value: true
-        heu_417:
-          Value: true
-        heu_418:
-          Value: true
-        heu_419:
-          Value: true
-        heu_42:
-          Value: true
-        heu_420:
-          Value: true
-        heu_421:
-          Value: true
-        heu_422:
-          Value: true
-        heu_423:
-          Value: true
-        heu_424:
-          Value: true
-        heu_425:
-          Value: true
-        heu_426:
-          Value: true
-        heu_427:
-          Value: true
-        heu_428:
-          Value: true
-        heu_429:
-          Value: true
-        heu_43:
-          Value: true
-        heu_430:
-          Value: true
-        heu_431:
-          Value: true
-        heu_432:
-          Value: true
-        heu_433:
-          Value: true
-        heu_434:
-          Value: true
-        heu_435:
-          Value: true
-        heu_436:
-          Value: true
-        heu_437:
-          Value: true
-        heu_438:
-          Value: true
-        heu_439:
-          Value: true
-        heu_44:
-          Value: true
-        heu_440:
-          Value: true
-        heu_441:
-          Value: true
-        heu_442:
-          Value: true
-        heu_443:
-          Value: true
-        heu_444:
-          Value: true
-        heu_445:
-          Value: true
-        heu_446:
-          Value: true
-        heu_447:
-          Value: true
-        heu_448:
-          Value: true
-        heu_449:
-          Value: true
-        heu_45:
-          Value: true
-        heu_450:
-          Value: true
-        heu_451:
-          Value: true
-        heu_452:
-          Value: true
-        heu_453:
-          Value: true
-        heu_454:
-          Value: true
-        heu_455:
-          Value: true
-        heu_456:
-          Value: true
-        heu_457:
-          Value: true
-        heu_458:
-          Value: true
-        heu_459:
-          Value: true
-        heu_46:
-          Value: true
-        heu_460:
-          Value: true
-        heu_461:
-          Value: true
-        heu_462:
-          Value: true
-        heu_463:
-          Value: true
-        heu_464:
-          Value: true
-        heu_465:
-          Value: true
-        heu_466:
-          Value: true
-        heu_467:
-          Value: true
-        heu_468:
-          Value: true
-        heu_469:
-          Value: true
-        heu_47:
-          Value: true
-        heu_470:
-          Value: true
-        heu_471:
-          Value: true
-        heu_472:
-          Value: true
-        heu_473:
-          Value: true
-        heu_474:
-          Value: true
-        heu_475:
-          Value: true
-        heu_476:
-          Value: true
-        heu_477:
-          Value: true
-        heu_478:
-          Value: true
-        heu_479:
-          Value: true
-        heu_48:
-          Value: true
-        heu_480:
-          Value: true
-        heu_481:
-          Value: true
-        heu_482:
-          Value: true
-        heu_483:
-          Value: true
-        heu_484:
-          Value: true
-        heu_485:
-          Value: true
-        heu_486:
-          Value: true
-        heu_487:
-          Value: true
-        heu_488:
-          Value: true
-        heu_489:
-          Value: true
-        heu_49:
-          Value: true
-        heu_490:
-          Value: true
-        heu_491:
-          Value: true
-        heu_492:
-          Value: true
-        heu_493:
-          Value: true
-        heu_494:
-          Value: true
-        heu_495:
-          Value: true
-        heu_496:
-          Value: true
-        heu_497:
-          Value: true
-        heu_498:
-          Value: true
-        heu_499:
-          Value: true
-        heu_5:
-          Value: true
-        heu_50:
-          Value: true
-        heu_500:
-          Value: true
-        heu_501:
-          Value: true
-        heu_502:
-          Value: true
-        heu_503:
-          Value: true
-        heu_504:
-          Value: true
-        heu_505:
-          Value: true
-        heu_506:
-          Value: true
-        heu_507:
-          Value: true
-        heu_508:
-          Value: true
-        heu_509:
-          Value: true
-        heu_51:
-          Value: true
-        heu_510:
-          Value: true
-        heu_511:
-          Value: true
-        heu_512:
-          Value: true
-        heu_513:
-          Value: true
-        heu_514:
-          Value: true
-        heu_515:
-          Value: true
-        heu_516:
-          Value: true
-        heu_517:
-          Value: true
-        heu_518:
-          Value: true
-        heu_519:
-          Value: true
-        heu_52:
-          Value: true
-        heu_520:
-          Value: true
-        heu_521:
-          Value: true
-        heu_522:
-          Value: true
-        heu_523:
-          Value: true
-        heu_524:
-          Value: true
-        heu_525:
-          Value: true
-        heu_526:
-          Value: true
-        heu_527:
-          Value: true
-        heu_528:
-          Value: true
-        heu_529:
-          Value: true
-        heu_53:
-          Value: true
-        heu_530:
-          Value: true
-        heu_531:
-          Value: true
-        heu_532:
-          Value: true
-        heu_533:
-          Value: true
-        heu_534:
-          Value: true
-        heu_535:
-          Value: true
-        heu_536:
-          Value: true
-        heu_537:
-          Value: true
-        heu_538:
-          Value: true
-        heu_539:
-          Value: true
-        heu_54:
-          Value: true
-        heu_540:
-          Value: true
-        heu_541:
-          Value: true
-        heu_542:
-          Value: true
-        heu_543:
-          Value: true
-        heu_544:
-          Value: true
-        heu_545:
-          Value: true
-        heu_546:
-          Value: true
-        heu_547:
-          Value: true
-        heu_548:
-          Value: true
-        heu_549:
-          Value: true
-        heu_55:
-          Value: true
-        heu_550:
-          Value: true
-        heu_551:
-          Value: true
-        heu_552:
-          Value: true
-        heu_553:
-          Value: true
-        heu_554:
-          Value: true
-        heu_555:
-          Value: true
-        heu_556:
-          Value: true
-        heu_557:
-          Value: true
-        heu_558:
-          Value: true
-        heu_559:
-          Value: true
-        heu_56:
-          Value: true
-        heu_560:
-          Value: true
-        heu_561:
-          Value: true
-        heu_562:
-          Value: true
-        heu_563:
-          Value: true
-        heu_564:
-          Value: true
-        heu_565:
-          Value: true
-        heu_566:
-          Value: true
-        heu_567:
-          Value: true
-        heu_568:
-          Value: true
-        heu_569:
-          Value: true
-        heu_57:
-          Value: true
-        heu_570:
-          Value: true
-        heu_571:
-          Value: true
-        heu_572:
-          Value: true
-        heu_573:
-          Value: true
-        heu_574:
-          Value: true
-        heu_575:
-          Value: true
-        heu_576:
-          Value: true
-        heu_577:
-          Value: true
-        heu_578:
-          Value: true
-        heu_579:
-          Value: true
-        heu_58:
-          Value: true
-        heu_580:
-          Value: true
-        heu_581:
-          Value: true
-        heu_582:
-          Value: true
-        heu_583:
-          Value: true
-        heu_584:
-          Value: true
-        heu_585:
-          Value: true
-        heu_586:
-          Value: true
-        heu_587:
-          Value: true
-        heu_588:
-          Value: true
-        heu_589:
-          Value: true
-        heu_59:
-          Value: true
-        heu_590:
-          Value: true
-        heu_591:
-          Value: true
-        heu_592:
-          Value: true
-        heu_593:
-          Value: true
-        heu_594:
-          Value: true
-        heu_595:
-          Value: true
-        heu_596:
-          Value: true
-        heu_597:
-          Value: true
-        heu_598:
-          Value: true
-        heu_599:
-          Value: true
-        heu_6:
-          Value: true
-        heu_60:
-          Value: true
-        heu_600:
-          Value: true
-        heu_601:
-          Value: true
-        heu_602:
-          Value: true
-        heu_603:
-          Value: true
-        heu_604:
-          Value: true
-        heu_605:
-          Value: true
-        heu_606:
-          Value: true
-        heu_607:
-          Value: true
-        heu_608:
-          Value: true
-        heu_609:
-          Value: true
-        heu_61:
-          Value: true
-        heu_610:
-          Value: true
-        heu_611:
-          Value: true
-        heu_612:
-          Value: true
-        heu_613:
-          Value: true
-        heu_614:
-          Value: true
-        heu_615:
-          Value: true
-        heu_616:
-          Value: true
-        heu_617:
-          Value: true
-        heu_618:
-          Value: true
-        heu_619:
-          Value: true
-        heu_62:
-          Value: true
-        heu_620:
-          Value: true
-        heu_621:
-          Value: true
-        heu_622:
-          Value: true
-        heu_623:
-          Value: true
-        heu_624:
-          Value: true
-        heu_625:
-          Value: true
-        heu_626:
-          Value: true
-        heu_627:
-          Value: true
-        heu_628:
-          Value: true
-        heu_629:
-          Value: true
-        heu_63:
-          Value: true
-        heu_630:
-          Value: true
-        heu_631:
-          Value: true
-        heu_632:
-          Value: true
-        heu_633:
-          Value: true
-        heu_634:
-          Value: true
-        heu_635:
-          Value: true
-        heu_636:
-          Value: true
-        heu_637:
-          Value: true
-        heu_638:
-          Value: true
-        heu_639:
-          Value: true
-        heu_64:
-          Value: true
-        heu_640:
-          Value: true
-        heu_641:
-          Value: true
-        heu_642:
-          Value: true
-        heu_643:
-          Value: true
-        heu_644:
-          Value: true
-        heu_645:
-          Value: true
-        heu_646:
-          Value: true
-        heu_647:
-          Value: true
-        heu_648:
-          Value: true
-        heu_649:
-          Value: true
-        heu_65:
-          Value: true
-        heu_650:
-          Value: true
-        heu_651:
-          Value: true
-        heu_652:
-          Value: true
-        heu_653:
-          Value: true
-        heu_654:
-          Value: true
-        heu_655:
-          Value: true
-        heu_656:
-          Value: true
-        heu_657:
-          Value: true
-        heu_658:
-          Value: true
-        heu_659:
-          Value: true
-        heu_66:
-          Value: true
-        heu_660:
-          Value: true
-        heu_661:
-          Value: true
-        heu_662:
-          Value: true
-        heu_663:
-          Value: true
-        heu_664:
-          Value: true
-        heu_665:
-          Value: true
-        heu_666:
-          Value: true
-        heu_667:
-          Value: true
-        heu_668:
-          Value: true
-        heu_669:
-          Value: true
-        heu_67:
-          Value: true
-        heu_670:
-          Value: true
-        heu_671:
-          Value: true
-        heu_672:
-          Value: true
-        heu_673:
-          Value: true
-        heu_674:
-          Value: true
-        heu_675:
-          Value: true
-        heu_676:
-          Value: true
-        heu_677:
-          Value: true
-        heu_678:
-          Value: true
-        heu_679:
-          Value: true
-        heu_68:
-          Value: true
-        heu_680:
-          Value: true
-        heu_681:
-          Value: true
-        heu_682:
-          Value: true
-        heu_683:
-          Value: true
-        heu_684:
-          Value: true
-        heu_685:
-          Value: true
-        heu_686:
-          Value: true
-        heu_687:
-          Value: true
-        heu_688:
-          Value: true
-        heu_689:
-          Value: true
-        heu_69:
-          Value: true
-        heu_690:
-          Value: true
-        heu_691:
-          Value: true
-        heu_692:
-          Value: true
-        heu_693:
-          Value: true
-        heu_694:
-          Value: true
-        heu_695:
-          Value: true
-        heu_696:
-          Value: true
-        heu_697:
-          Value: true
-        heu_698:
-          Value: true
-        heu_699:
-          Value: true
-        heu_7:
-          Value: true
-        heu_70:
-          Value: true
-        heu_700:
-          Value: true
-        heu_701:
-          Value: true
-        heu_702:
-          Value: true
-        heu_703:
-          Value: true
-        heu_704:
-          Value: true
-        heu_705:
-          Value: true
-        heu_706:
-          Value: true
-        heu_707:
-          Value: true
-        heu_708:
-          Value: true
-        heu_709:
-          Value: true
-        heu_71:
-          Value: true
-        heu_710:
-          Value: true
-        heu_711:
-          Value: true
-        heu_712:
-          Value: true
-        heu_713:
-          Value: true
-        heu_714:
-          Value: true
-        heu_715:
-          Value: true
-        heu_716:
-          Value: true
-        heu_717:
-          Value: true
-        heu_718:
-          Value: true
-        heu_719:
-          Value: true
-        heu_72:
-          Value: true
-        heu_720:
-          Value: true
-        heu_721:
-          Value: true
-        heu_722:
-          Value: true
-        heu_723:
-          Value: true
-        heu_724:
-          Value: true
-        heu_725:
-          Value: true
-        heu_726:
-          Value: true
-        heu_727:
-          Value: true
-        heu_728:
-          Value: true
-        heu_729:
-          Value: true
-        heu_73:
-          Value: true
-        heu_730:
-          Value: true
-        heu_731:
-          Value: true
-        heu_732:
-          Value: true
-        heu_733:
-          Value: true
-        heu_734:
-          Value: true
-        heu_735:
-          Value: true
-        heu_736:
-          Value: true
-        heu_737:
-          Value: true
-        heu_738:
-          Value: true
-        heu_739:
-          Value: true
-        heu_74:
-          Value: true
-        heu_740:
-          Value: true
-        heu_741:
-          Value: true
-        heu_742:
-          Value: true
-        heu_743:
-          Value: true
-        heu_744:
-          Value: true
-        heu_745:
-          Value: true
-        heu_746:
-          Value: true
-        heu_747:
-          Value: true
-        heu_748:
-          Value: true
-        heu_749:
-          Value: true
-        heu_75:
-          Value: true
-        heu_750:
-          Value: true
-        heu_751:
-          Value: true
-        heu_752:
-          Value: true
-        heu_753:
-          Value: true
-        heu_754:
-          Value: true
-        heu_755:
-          Value: true
-        heu_756:
-          Value: true
-        heu_757:
-          Value: true
-        heu_758:
-          Value: true
-        heu_759:
-          Value: true
-        heu_76:
-          Value: true
-        heu_760:
-          Value: true
-        heu_761:
-          Value: true
-        heu_762:
-          Value: true
-        heu_763:
-          Value: true
-        heu_764:
-          Value: true
-        heu_765:
-          Value: true
-        heu_766:
-          Value: true
-        heu_767:
-          Value: true
-        heu_768:
-          Value: true
-        heu_769:
-          Value: true
-        heu_77:
-          Value: true
-        heu_770:
-          Value: true
-        heu_771:
-          Value: true
-        heu_772:
-          Value: true
-        heu_773:
-          Value: true
-        heu_774:
-          Value: true
-        heu_775:
-          Value: true
-        heu_776:
-          Value: true
-        heu_777:
-          Value: true
-        heu_778:
-          Value: true
-        heu_779:
-          Value: true
-        heu_78:
-          Value: true
-        heu_780:
-          Value: true
-        heu_781:
-          Value: true
-        heu_782:
-          Value: true
-        heu_783:
-          Value: true
-        heu_784:
-          Value: true
-        heu_785:
-          Value: true
-        heu_786:
-          Value: true
-        heu_787:
-          Value: true
-        heu_788:
-          Value: true
-        heu_789:
-          Value: true
-        heu_79:
-          Value: true
-        heu_790:
-          Value: true
-        heu_791:
-          Value: true
-        heu_792:
-          Value: true
-        heu_793:
-          Value: true
-        heu_794:
-          Value: true
-        heu_795:
-          Value: true
-        heu_796:
-          Value: true
-        heu_797:
-          Value: true
-        heu_798:
-          Value: true
-        heu_799:
-          Value: true
-        heu_8:
-          Value: true
-        heu_80:
-          Value: true
-        heu_800:
-          Value: true
-        heu_801:
-          Value: true
-        heu_802:
-          Value: true
-        heu_803:
-          Value: true
-        heu_804:
-          Value: true
-        heu_805:
-          Value: true
-        heu_806:
-          Value: true
-        heu_807:
-          Value: true
-        heu_808:
-          Value: true
-        heu_809:
-          Value: true
-        heu_81:
-          Value: true
-        heu_810:
-          Value: true
-        heu_811:
-          Value: true
-        heu_812:
-          Value: true
-        heu_813:
-          Value: true
-        heu_814:
-          Value: true
-        heu_815:
-          Value: true
-        heu_816:
-          Value: true
-        heu_817:
-          Value: true
-        heu_818:
-          Value: true
-        heu_819:
-          Value: true
-        heu_82:
-          Value: true
-        heu_820:
-          Value: true
-        heu_821:
-          Value: true
-        heu_822:
-          Value: true
-        heu_823:
-          Value: true
-        heu_824:
-          Value: true
-        heu_825:
-          Value: true
-        heu_826:
-          Value: true
-        heu_827:
-          Value: true
-        heu_828:
-          Value: true
-        heu_829:
-          Value: true
-        heu_83:
-          Value: true
-        heu_830:
-          Value: true
-        heu_831:
-          Value: true
-        heu_832:
-          Value: true
-        heu_833:
-          Value: true
-        heu_834:
-          Value: true
-        heu_835:
-          Value: true
-        heu_836:
-          Value: true
-        heu_837:
-          Value: true
-        heu_838:
-          Value: true
-        heu_839:
-          Value: true
-        heu_84:
-          Value: true
-        heu_840:
-          Value: true
-        heu_841:
-          Value: true
-        heu_842:
-          Value: true
-        heu_843:
-          Value: true
-        heu_844:
-          Value: true
-        heu_845:
-          Value: true
-        heu_846:
-          Value: true
-        heu_847:
-          Value: true
-        heu_848:
-          Value: true
-        heu_849:
-          Value: true
-        heu_85:
-          Value: true
-        heu_850:
-          Value: true
-        heu_851:
-          Value: true
-        heu_852:
-          Value: true
-        heu_853:
-          Value: true
-        heu_854:
-          Value: true
-        heu_855:
-          Value: true
-        heu_856:
-          Value: true
-        heu_857:
-          Value: true
-        heu_858:
-          Value: true
-        heu_859:
-          Value: true
-        heu_86:
-          Value: true
-        heu_860:
-          Value: true
-        heu_861:
-          Value: true
-        heu_862:
-          Value: true
-        heu_863:
-          Value: true
-        heu_864:
-          Value: true
-        heu_865:
-          Value: true
-        heu_866:
-          Value: true
-        heu_867:
-          Value: true
-        heu_868:
-          Value: true
-        heu_869:
-          Value: true
-        heu_87:
-          Value: true
-        heu_870:
-          Value: true
-        heu_871:
-          Value: true
-        heu_872:
-          Value: true
-        heu_873:
-          Value: true
-        heu_874:
-          Value: true
-        heu_875:
-          Value: true
-        heu_876:
-          Value: true
-        heu_877:
-          Value: true
-        heu_878:
-          Value: true
-        heu_879:
-          Value: true
-        heu_88:
-          Value: true
-        heu_880:
-          Value: true
-        heu_881:
-          Value: true
-        heu_882:
-          Value: true
-        heu_883:
-          Value: true
-        heu_884:
-          Value: true
-        heu_885:
-          Value: true
-        heu_886:
-          Value: true
-        heu_887:
-          Value: true
-        heu_888:
-          Value: true
-        heu_889:
-          Value: true
-        heu_89:
-          Value: true
-        heu_890:
-          Value: true
-        heu_891:
-          Value: true
-        heu_892:
-          Value: true
-        heu_893:
-          Value: true
-        heu_894:
-          Value: true
-        heu_895:
-          Value: true
-        heu_896:
-          Value: true
-        heu_897:
-          Value: true
-        heu_898:
-          Value: true
-        heu_899:
-          Value: true
-        heu_9:
-          Value: true
-        heu_90:
-          Value: true
-        heu_900:
-          Value: true
-        heu_901:
-          Value: true
-        heu_902:
-          Value: true
-        heu_903:
-          Value: true
-        heu_904:
-          Value: true
-        heu_905:
-          Value: true
-        heu_906:
-          Value: true
-        heu_907:
-          Value: true
-        heu_908:
-          Value: true
-        heu_909:
-          Value: true
-        heu_91:
-          Value: true
-        heu_910:
-          Value: true
-        heu_911:
-          Value: true
-        heu_912:
-          Value: true
-        heu_913:
-          Value: true
-        heu_914:
-          Value: true
-        heu_915:
-          Value: true
-        heu_916:
-          Value: true
-        heu_917:
-          Value: true
-        heu_918:
-          Value: true
-        heu_919:
-          Value: true
-        heu_92:
-          Value: true
-        heu_920:
-          Value: true
-        heu_93:
-          Value: true
-        heu_94:
-          Value: true
-        heu_95:
-          Value: true
-        heu_96:
-          Value: true
-        heu_97:
-          Value: true
-        heu_98:
-          Value: true
-        heu_99:
-          Value: true
-        object_mesh_frame:
-          Value: true
-        object_pose:
-          Value: true
-        object_pose_aligned:
-          Value: true
-        # palm_link_hithand:
-        #   Value: true
         panda_link0:
           Value: false
         panda_link1:
@@ -2644,2024 +820,22 @@ Visualization Manager:
                         panda_link6:
                           panda_link7:
                             panda_link8:
-                              # base_link_hithand:
-                              #   Right_Index_Basecover:
-                              #     Right_Index_Phaprox:
-                              #       Right_Index_Phamed:
-                              #         Right_Index_Phadist:
-                              #           {}
-                              #   Right_Little_Basecover:
-                              #     Right_Little_Phaprox:
-                              #       Right_Little_Phamed:
-                              #         Right_Little_Phadist:
-                              #           {}
-                              #   Right_Middle_Basecover:
-                              #     Right_Middle_Phaprox:
-                              #       Right_Middle_Phamed:
-                              #         Right_Middle_Phadist:
-                              #           {}
-                              #   Right_Ring_Basecover:
-                              #     Right_Ring_Phaprox:
-                              #       Right_Ring_Phamed:
-                              #         Right_Ring_Phadist:
-                              #           {}
-                              #   Right_Thumb_Basecover:
-                              #     Right_Thumb_Phaprox:
-                              #       Right_Thumb_Phamed:
-                              #         Right_Thumb_Phadist:
-                              #           {}
-                              #   palm_link_hithand:
-                              #     {}
-          filt_0:
-            {}
-          filt_1:
-            {}
-          filt_10:
-            {}
-          filt_11:
-            {}
-          filt_12:
-            {}
-          filt_13:
-            {}
-          filt_14:
-            {}
-          filt_15:
-            {}
-          filt_16:
-            {}
-          filt_17:
-            {}
-          filt_18:
-            {}
-          filt_19:
-            {}
-          filt_2:
-            {}
-          filt_20:
-            {}
-          filt_21:
-            {}
-          filt_22:
-            {}
-          filt_23:
-            {}
-          filt_24:
-            {}
-          filt_25:
-            {}
-          filt_26:
-            {}
-          filt_27:
-            {}
-          filt_28:
-            {}
-          filt_29:
-            {}
-          filt_3:
-            {}
-          filt_30:
-            {}
-          filt_31:
-            {}
-          filt_32:
-            {}
-          filt_33:
-            {}
-          filt_34:
-            {}
-          filt_35:
-            {}
-          filt_36:
-            {}
-          filt_37:
-            {}
-          filt_38:
-            {}
-          filt_39:
-            {}
-          filt_4:
-            {}
-          filt_40:
-            {}
-          filt_41:
-            {}
-          filt_42:
-            {}
-          filt_43:
-            {}
-          filt_44:
-            {}
-          filt_45:
-            {}
-          filt_46:
-            {}
-          filt_47:
-            {}
-          filt_48:
-            {}
-          filt_49:
-            {}
-          filt_5:
-            {}
-          filt_50:
-            {}
-          filt_51:
-            {}
-          filt_52:
-            {}
-          filt_53:
-            {}
-          filt_54:
-            {}
-          filt_55:
-            {}
-          filt_56:
-            {}
-          filt_57:
-            {}
-          filt_58:
-            {}
-          filt_59:
-            {}
-          filt_6:
-            {}
-          filt_60:
-            {}
-          filt_61:
-            {}
-          filt_62:
-            {}
-          filt_63:
-            {}
-          filt_64:
-            {}
-          filt_65:
-            {}
-          filt_66:
-            {}
-          filt_67:
-            {}
-          filt_68:
-            {}
-          filt_69:
-            {}
-          filt_7:
-            {}
-          filt_70:
-            {}
-          filt_8:
-            {}
-          filt_9:
-            {}
-          heu_0:
-            {}
-          heu_1:
-            {}
-          heu_10:
-            {}
-          heu_100:
-            {}
-          heu_101:
-            {}
-          heu_102:
-            {}
-          heu_103:
-            {}
-          heu_104:
-            {}
-          heu_105:
-            {}
-          heu_106:
-            {}
-          heu_107:
-            {}
-          heu_108:
-            {}
-          heu_109:
-            {}
-          heu_11:
-            {}
-          heu_110:
-            {}
-          heu_111:
-            {}
-          heu_112:
-            {}
-          heu_113:
-            {}
-          heu_114:
-            {}
-          heu_115:
-            {}
-          heu_116:
-            {}
-          heu_117:
-            {}
-          heu_118:
-            {}
-          heu_119:
-            {}
-          heu_12:
-            {}
-          heu_120:
-            {}
-          heu_121:
-            {}
-          heu_122:
-            {}
-          heu_123:
-            {}
-          heu_124:
-            {}
-          heu_125:
-            {}
-          heu_126:
-            {}
-          heu_127:
-            {}
-          heu_128:
-            {}
-          heu_129:
-            {}
-          heu_13:
-            {}
-          heu_130:
-            {}
-          heu_131:
-            {}
-          heu_132:
-            {}
-          heu_133:
-            {}
-          heu_134:
-            {}
-          heu_135:
-            {}
-          heu_136:
-            {}
-          heu_137:
-            {}
-          heu_138:
-            {}
-          heu_139:
-            {}
-          heu_14:
-            {}
-          heu_140:
-            {}
-          heu_141:
-            {}
-          heu_142:
-            {}
-          heu_143:
-            {}
-          heu_144:
-            {}
-          heu_145:
-            {}
-          heu_146:
-            {}
-          heu_147:
-            {}
-          heu_148:
-            {}
-          heu_149:
-            {}
-          heu_15:
-            {}
-          heu_150:
-            {}
-          heu_151:
-            {}
-          heu_152:
-            {}
-          heu_153:
-            {}
-          heu_154:
-            {}
-          heu_155:
-            {}
-          heu_156:
-            {}
-          heu_157:
-            {}
-          heu_158:
-            {}
-          heu_159:
-            {}
-          heu_16:
-            {}
-          heu_160:
-            {}
-          heu_161:
-            {}
-          heu_162:
-            {}
-          heu_163:
-            {}
-          heu_164:
-            {}
-          heu_165:
-            {}
-          heu_166:
-            {}
-          heu_167:
-            {}
-          heu_168:
-            {}
-          heu_169:
-            {}
-          heu_17:
-            {}
-          heu_170:
-            {}
-          heu_171:
-            {}
-          heu_172:
-            {}
-          heu_173:
-            {}
-          heu_174:
-            {}
-          heu_175:
-            {}
-          heu_176:
-            {}
-          heu_177:
-            {}
-          heu_178:
-            {}
-          heu_179:
-            {}
-          heu_18:
-            {}
-          heu_180:
-            {}
-          heu_181:
-            {}
-          heu_182:
-            {}
-          heu_183:
-            {}
-          heu_184:
-            {}
-          heu_185:
-            {}
-          heu_186:
-            {}
-          heu_187:
-            {}
-          heu_188:
-            {}
-          heu_189:
-            {}
-          heu_19:
-            {}
-          heu_190:
-            {}
-          heu_191:
-            {}
-          heu_192:
-            {}
-          heu_193:
-            {}
-          heu_194:
-            {}
-          heu_195:
-            {}
-          heu_196:
-            {}
-          heu_197:
-            {}
-          heu_198:
-            {}
-          heu_199:
-            {}
-          heu_2:
-            {}
-          heu_20:
-            {}
-          heu_200:
-            {}
-          heu_201:
-            {}
-          heu_202:
-            {}
-          heu_203:
-            {}
-          heu_204:
-            {}
-          heu_205:
-            {}
-          heu_206:
-            {}
-          heu_207:
-            {}
-          heu_208:
-            {}
-          heu_209:
-            {}
-          heu_21:
-            {}
-          heu_210:
-            {}
-          heu_211:
-            {}
-          heu_212:
-            {}
-          heu_213:
-            {}
-          heu_214:
-            {}
-          heu_215:
-            {}
-          heu_216:
-            {}
-          heu_217:
-            {}
-          heu_218:
-            {}
-          heu_219:
-            {}
-          heu_22:
-            {}
-          heu_220:
-            {}
-          heu_221:
-            {}
-          heu_222:
-            {}
-          heu_223:
-            {}
-          heu_224:
-            {}
-          heu_225:
-            {}
-          heu_226:
-            {}
-          heu_227:
-            {}
-          heu_228:
-            {}
-          heu_229:
-            {}
-          heu_23:
-            {}
-          heu_230:
-            {}
-          heu_231:
-            {}
-          heu_232:
-            {}
-          heu_233:
-            {}
-          heu_234:
-            {}
-          heu_235:
-            {}
-          heu_236:
-            {}
-          heu_237:
-            {}
-          heu_238:
-            {}
-          heu_239:
-            {}
-          heu_24:
-            {}
-          heu_240:
-            {}
-          heu_241:
-            {}
-          heu_242:
-            {}
-          heu_243:
-            {}
-          heu_244:
-            {}
-          heu_245:
-            {}
-          heu_246:
-            {}
-          heu_247:
-            {}
-          heu_248:
-            {}
-          heu_249:
-            {}
-          heu_25:
-            {}
-          heu_250:
-            {}
-          heu_251:
-            {}
-          heu_252:
-            {}
-          heu_253:
-            {}
-          heu_254:
-            {}
-          heu_255:
-            {}
-          heu_256:
-            {}
-          heu_257:
-            {}
-          heu_258:
-            {}
-          heu_259:
-            {}
-          heu_26:
-            {}
-          heu_260:
-            {}
-          heu_261:
-            {}
-          heu_262:
-            {}
-          heu_263:
-            {}
-          heu_264:
-            {}
-          heu_265:
-            {}
-          heu_266:
-            {}
-          heu_267:
-            {}
-          heu_268:
-            {}
-          heu_269:
-            {}
-          heu_27:
-            {}
-          heu_270:
-            {}
-          heu_271:
-            {}
-          heu_272:
-            {}
-          heu_273:
-            {}
-          heu_274:
-            {}
-          heu_275:
-            {}
-          heu_276:
-            {}
-          heu_277:
-            {}
-          heu_278:
-            {}
-          heu_279:
-            {}
-          heu_28:
-            {}
-          heu_280:
-            {}
-          heu_281:
-            {}
-          heu_282:
-            {}
-          heu_283:
-            {}
-          heu_284:
-            {}
-          heu_285:
-            {}
-          heu_286:
-            {}
-          heu_287:
-            {}
-          heu_288:
-            {}
-          heu_289:
-            {}
-          heu_29:
-            {}
-          heu_290:
-            {}
-          heu_291:
-            {}
-          heu_292:
-            {}
-          heu_293:
-            {}
-          heu_294:
-            {}
-          heu_295:
-            {}
-          heu_296:
-            {}
-          heu_297:
-            {}
-          heu_298:
-            {}
-          heu_299:
-            {}
-          heu_3:
-            {}
-          heu_30:
-            {}
-          heu_300:
-            {}
-          heu_301:
-            {}
-          heu_302:
-            {}
-          heu_303:
-            {}
-          heu_304:
-            {}
-          heu_305:
-            {}
-          heu_306:
-            {}
-          heu_307:
-            {}
-          heu_308:
-            {}
-          heu_309:
-            {}
-          heu_31:
-            {}
-          heu_310:
-            {}
-          heu_311:
-            {}
-          heu_312:
-            {}
-          heu_313:
-            {}
-          heu_314:
-            {}
-          heu_315:
-            {}
-          heu_316:
-            {}
-          heu_317:
-            {}
-          heu_318:
-            {}
-          heu_319:
-            {}
-          heu_32:
-            {}
-          heu_320:
-            {}
-          heu_321:
-            {}
-          heu_322:
-            {}
-          heu_323:
-            {}
-          heu_324:
-            {}
-          heu_325:
-            {}
-          heu_326:
-            {}
-          heu_327:
-            {}
-          heu_328:
-            {}
-          heu_329:
-            {}
-          heu_33:
-            {}
-          heu_330:
-            {}
-          heu_331:
-            {}
-          heu_332:
-            {}
-          heu_333:
-            {}
-          heu_334:
-            {}
-          heu_335:
-            {}
-          heu_336:
-            {}
-          heu_337:
-            {}
-          heu_338:
-            {}
-          heu_339:
-            {}
-          heu_34:
-            {}
-          heu_340:
-            {}
-          heu_341:
-            {}
-          heu_342:
-            {}
-          heu_343:
-            {}
-          heu_344:
-            {}
-          heu_345:
-            {}
-          heu_346:
-            {}
-          heu_347:
-            {}
-          heu_348:
-            {}
-          heu_349:
-            {}
-          heu_35:
-            {}
-          heu_350:
-            {}
-          heu_351:
-            {}
-          heu_352:
-            {}
-          heu_353:
-            {}
-          heu_354:
-            {}
-          heu_355:
-            {}
-          heu_356:
-            {}
-          heu_357:
-            {}
-          heu_358:
-            {}
-          heu_359:
-            {}
-          heu_36:
-            {}
-          heu_360:
-            {}
-          heu_361:
-            {}
-          heu_362:
-            {}
-          heu_363:
-            {}
-          heu_364:
-            {}
-          heu_365:
-            {}
-          heu_366:
-            {}
-          heu_367:
-            {}
-          heu_368:
-            {}
-          heu_369:
-            {}
-          heu_37:
-            {}
-          heu_370:
-            {}
-          heu_371:
-            {}
-          heu_372:
-            {}
-          heu_373:
-            {}
-          heu_374:
-            {}
-          heu_375:
-            {}
-          heu_376:
-            {}
-          heu_377:
-            {}
-          heu_378:
-            {}
-          heu_379:
-            {}
-          heu_38:
-            {}
-          heu_380:
-            {}
-          heu_381:
-            {}
-          heu_382:
-            {}
-          heu_383:
-            {}
-          heu_384:
-            {}
-          heu_385:
-            {}
-          heu_386:
-            {}
-          heu_387:
-            {}
-          heu_388:
-            {}
-          heu_389:
-            {}
-          heu_39:
-            {}
-          heu_390:
-            {}
-          heu_391:
-            {}
-          heu_392:
-            {}
-          heu_393:
-            {}
-          heu_394:
-            {}
-          heu_395:
-            {}
-          heu_396:
-            {}
-          heu_397:
-            {}
-          heu_398:
-            {}
-          heu_399:
-            {}
-          heu_4:
-            {}
-          heu_40:
-            {}
-          heu_400:
-            {}
-          heu_401:
-            {}
-          heu_402:
-            {}
-          heu_403:
-            {}
-          heu_404:
-            {}
-          heu_405:
-            {}
-          heu_406:
-            {}
-          heu_407:
-            {}
-          heu_408:
-            {}
-          heu_409:
-            {}
-          heu_41:
-            {}
-          heu_410:
-            {}
-          heu_411:
-            {}
-          heu_412:
-            {}
-          heu_413:
-            {}
-          heu_414:
-            {}
-          heu_415:
-            {}
-          heu_416:
-            {}
-          heu_417:
-            {}
-          heu_418:
-            {}
-          heu_419:
-            {}
-          heu_42:
-            {}
-          heu_420:
-            {}
-          heu_421:
-            {}
-          heu_422:
-            {}
-          heu_423:
-            {}
-          heu_424:
-            {}
-          heu_425:
-            {}
-          heu_426:
-            {}
-          heu_427:
-            {}
-          heu_428:
-            {}
-          heu_429:
-            {}
-          heu_43:
-            {}
-          heu_430:
-            {}
-          heu_431:
-            {}
-          heu_432:
-            {}
-          heu_433:
-            {}
-          heu_434:
-            {}
-          heu_435:
-            {}
-          heu_436:
-            {}
-          heu_437:
-            {}
-          heu_438:
-            {}
-          heu_439:
-            {}
-          heu_44:
-            {}
-          heu_440:
-            {}
-          heu_441:
-            {}
-          heu_442:
-            {}
-          heu_443:
-            {}
-          heu_444:
-            {}
-          heu_445:
-            {}
-          heu_446:
-            {}
-          heu_447:
-            {}
-          heu_448:
-            {}
-          heu_449:
-            {}
-          heu_45:
-            {}
-          heu_450:
-            {}
-          heu_451:
-            {}
-          heu_452:
-            {}
-          heu_453:
-            {}
-          heu_454:
-            {}
-          heu_455:
-            {}
-          heu_456:
-            {}
-          heu_457:
-            {}
-          heu_458:
-            {}
-          heu_459:
-            {}
-          heu_46:
-            {}
-          heu_460:
-            {}
-          heu_461:
-            {}
-          heu_462:
-            {}
-          heu_463:
-            {}
-          heu_464:
-            {}
-          heu_465:
-            {}
-          heu_466:
-            {}
-          heu_467:
-            {}
-          heu_468:
-            {}
-          heu_469:
-            {}
-          heu_47:
-            {}
-          heu_470:
-            {}
-          heu_471:
-            {}
-          heu_472:
-            {}
-          heu_473:
-            {}
-          heu_474:
-            {}
-          heu_475:
-            {}
-          heu_476:
-            {}
-          heu_477:
-            {}
-          heu_478:
-            {}
-          heu_479:
-            {}
-          heu_48:
-            {}
-          heu_480:
-            {}
-          heu_481:
-            {}
-          heu_482:
-            {}
-          heu_483:
-            {}
-          heu_484:
-            {}
-          heu_485:
-            {}
-          heu_486:
-            {}
-          heu_487:
-            {}
-          heu_488:
-            {}
-          heu_489:
-            {}
-          heu_49:
-            {}
-          heu_490:
-            {}
-          heu_491:
-            {}
-          heu_492:
-            {}
-          heu_493:
-            {}
-          heu_494:
-            {}
-          heu_495:
-            {}
-          heu_496:
-            {}
-          heu_497:
-            {}
-          heu_498:
-            {}
-          heu_499:
-            {}
-          heu_5:
-            {}
-          heu_50:
-            {}
-          heu_500:
-            {}
-          heu_501:
-            {}
-          heu_502:
-            {}
-          heu_503:
-            {}
-          heu_504:
-            {}
-          heu_505:
-            {}
-          heu_506:
-            {}
-          heu_507:
-            {}
-          heu_508:
-            {}
-          heu_509:
-            {}
-          heu_51:
-            {}
-          heu_510:
-            {}
-          heu_511:
-            {}
-          heu_512:
-            {}
-          heu_513:
-            {}
-          heu_514:
-            {}
-          heu_515:
-            {}
-          heu_516:
-            {}
-          heu_517:
-            {}
-          heu_518:
-            {}
-          heu_519:
-            {}
-          heu_52:
-            {}
-          heu_520:
-            {}
-          heu_521:
-            {}
-          heu_522:
-            {}
-          heu_523:
-            {}
-          heu_524:
-            {}
-          heu_525:
-            {}
-          heu_526:
-            {}
-          heu_527:
-            {}
-          heu_528:
-            {}
-          heu_529:
-            {}
-          heu_53:
-            {}
-          heu_530:
-            {}
-          heu_531:
-            {}
-          heu_532:
-            {}
-          heu_533:
-            {}
-          heu_534:
-            {}
-          heu_535:
-            {}
-          heu_536:
-            {}
-          heu_537:
-            {}
-          heu_538:
-            {}
-          heu_539:
-            {}
-          heu_54:
-            {}
-          heu_540:
-            {}
-          heu_541:
-            {}
-          heu_542:
-            {}
-          heu_543:
-            {}
-          heu_544:
-            {}
-          heu_545:
-            {}
-          heu_546:
-            {}
-          heu_547:
-            {}
-          heu_548:
-            {}
-          heu_549:
-            {}
-          heu_55:
-            {}
-          heu_550:
-            {}
-          heu_551:
-            {}
-          heu_552:
-            {}
-          heu_553:
-            {}
-          heu_554:
-            {}
-          heu_555:
-            {}
-          heu_556:
-            {}
-          heu_557:
-            {}
-          heu_558:
-            {}
-          heu_559:
-            {}
-          heu_56:
-            {}
-          heu_560:
-            {}
-          heu_561:
-            {}
-          heu_562:
-            {}
-          heu_563:
-            {}
-          heu_564:
-            {}
-          heu_565:
-            {}
-          heu_566:
-            {}
-          heu_567:
-            {}
-          heu_568:
-            {}
-          heu_569:
-            {}
-          heu_57:
-            {}
-          heu_570:
-            {}
-          heu_571:
-            {}
-          heu_572:
-            {}
-          heu_573:
-            {}
-          heu_574:
-            {}
-          heu_575:
-            {}
-          heu_576:
-            {}
-          heu_577:
-            {}
-          heu_578:
-            {}
-          heu_579:
-            {}
-          heu_58:
-            {}
-          heu_580:
-            {}
-          heu_581:
-            {}
-          heu_582:
-            {}
-          heu_583:
-            {}
-          heu_584:
-            {}
-          heu_585:
-            {}
-          heu_586:
-            {}
-          heu_587:
-            {}
-          heu_588:
-            {}
-          heu_589:
-            {}
-          heu_59:
-            {}
-          heu_590:
-            {}
-          heu_591:
-            {}
-          heu_592:
-            {}
-          heu_593:
-            {}
-          heu_594:
-            {}
-          heu_595:
-            {}
-          heu_596:
-            {}
-          heu_597:
-            {}
-          heu_598:
-            {}
-          heu_599:
-            {}
-          heu_6:
-            {}
-          heu_60:
-            {}
-          heu_600:
-            {}
-          heu_601:
-            {}
-          heu_602:
-            {}
-          heu_603:
-            {}
-          heu_604:
-            {}
-          heu_605:
-            {}
-          heu_606:
-            {}
-          heu_607:
-            {}
-          heu_608:
-            {}
-          heu_609:
-            {}
-          heu_61:
-            {}
-          heu_610:
-            {}
-          heu_611:
-            {}
-          heu_612:
-            {}
-          heu_613:
-            {}
-          heu_614:
-            {}
-          heu_615:
-            {}
-          heu_616:
-            {}
-          heu_617:
-            {}
-          heu_618:
-            {}
-          heu_619:
-            {}
-          heu_62:
-            {}
-          heu_620:
-            {}
-          heu_621:
-            {}
-          heu_622:
-            {}
-          heu_623:
-            {}
-          heu_624:
-            {}
-          heu_625:
-            {}
-          heu_626:
-            {}
-          heu_627:
-            {}
-          heu_628:
-            {}
-          heu_629:
-            {}
-          heu_63:
-            {}
-          heu_630:
-            {}
-          heu_631:
-            {}
-          heu_632:
-            {}
-          heu_633:
-            {}
-          heu_634:
-            {}
-          heu_635:
-            {}
-          heu_636:
-            {}
-          heu_637:
-            {}
-          heu_638:
-            {}
-          heu_639:
-            {}
-          heu_64:
-            {}
-          heu_640:
-            {}
-          heu_641:
-            {}
-          heu_642:
-            {}
-          heu_643:
-            {}
-          heu_644:
-            {}
-          heu_645:
-            {}
-          heu_646:
-            {}
-          heu_647:
-            {}
-          heu_648:
-            {}
-          heu_649:
-            {}
-          heu_65:
-            {}
-          heu_650:
-            {}
-          heu_651:
-            {}
-          heu_652:
-            {}
-          heu_653:
-            {}
-          heu_654:
-            {}
-          heu_655:
-            {}
-          heu_656:
-            {}
-          heu_657:
-            {}
-          heu_658:
-            {}
-          heu_659:
-            {}
-          heu_66:
-            {}
-          heu_660:
-            {}
-          heu_661:
-            {}
-          heu_662:
-            {}
-          heu_663:
-            {}
-          heu_664:
-            {}
-          heu_665:
-            {}
-          heu_666:
-            {}
-          heu_667:
-            {}
-          heu_668:
-            {}
-          heu_669:
-            {}
-          heu_67:
-            {}
-          heu_670:
-            {}
-          heu_671:
-            {}
-          heu_672:
-            {}
-          heu_673:
-            {}
-          heu_674:
-            {}
-          heu_675:
-            {}
-          heu_676:
-            {}
-          heu_677:
-            {}
-          heu_678:
-            {}
-          heu_679:
-            {}
-          heu_68:
-            {}
-          heu_680:
-            {}
-          heu_681:
-            {}
-          heu_682:
-            {}
-          heu_683:
-            {}
-          heu_684:
-            {}
-          heu_685:
-            {}
-          heu_686:
-            {}
-          heu_687:
-            {}
-          heu_688:
-            {}
-          heu_689:
-            {}
-          heu_69:
-            {}
-          heu_690:
-            {}
-          heu_691:
-            {}
-          heu_692:
-            {}
-          heu_693:
-            {}
-          heu_694:
-            {}
-          heu_695:
-            {}
-          heu_696:
-            {}
-          heu_697:
-            {}
-          heu_698:
-            {}
-          heu_699:
-            {}
-          heu_7:
-            {}
-          heu_70:
-            {}
-          heu_700:
-            {}
-          heu_701:
-            {}
-          heu_702:
-            {}
-          heu_703:
-            {}
-          heu_704:
-            {}
-          heu_705:
-            {}
-          heu_706:
-            {}
-          heu_707:
-            {}
-          heu_708:
-            {}
-          heu_709:
-            {}
-          heu_71:
-            {}
-          heu_710:
-            {}
-          heu_711:
-            {}
-          heu_712:
-            {}
-          heu_713:
-            {}
-          heu_714:
-            {}
-          heu_715:
-            {}
-          heu_716:
-            {}
-          heu_717:
-            {}
-          heu_718:
-            {}
-          heu_719:
-            {}
-          heu_72:
-            {}
-          heu_720:
-            {}
-          heu_721:
-            {}
-          heu_722:
-            {}
-          heu_723:
-            {}
-          heu_724:
-            {}
-          heu_725:
-            {}
-          heu_726:
-            {}
-          heu_727:
-            {}
-          heu_728:
-            {}
-          heu_729:
-            {}
-          heu_73:
-            {}
-          heu_730:
-            {}
-          heu_731:
-            {}
-          heu_732:
-            {}
-          heu_733:
-            {}
-          heu_734:
-            {}
-          heu_735:
-            {}
-          heu_736:
-            {}
-          heu_737:
-            {}
-          heu_738:
-            {}
-          heu_739:
-            {}
-          heu_74:
-            {}
-          heu_740:
-            {}
-          heu_741:
-            {}
-          heu_742:
-            {}
-          heu_743:
-            {}
-          heu_744:
-            {}
-          heu_745:
-            {}
-          heu_746:
-            {}
-          heu_747:
-            {}
-          heu_748:
-            {}
-          heu_749:
-            {}
-          heu_75:
-            {}
-          heu_750:
-            {}
-          heu_751:
-            {}
-          heu_752:
-            {}
-          heu_753:
-            {}
-          heu_754:
-            {}
-          heu_755:
-            {}
-          heu_756:
-            {}
-          heu_757:
-            {}
-          heu_758:
-            {}
-          heu_759:
-            {}
-          heu_76:
-            {}
-          heu_760:
-            {}
-          heu_761:
-            {}
-          heu_762:
-            {}
-          heu_763:
-            {}
-          heu_764:
-            {}
-          heu_765:
-            {}
-          heu_766:
-            {}
-          heu_767:
-            {}
-          heu_768:
-            {}
-          heu_769:
-            {}
-          heu_77:
-            {}
-          heu_770:
-            {}
-          heu_771:
-            {}
-          heu_772:
-            {}
-          heu_773:
-            {}
-          heu_774:
-            {}
-          heu_775:
-            {}
-          heu_776:
-            {}
-          heu_777:
-            {}
-          heu_778:
-            {}
-          heu_779:
-            {}
-          heu_78:
-            {}
-          heu_780:
-            {}
-          heu_781:
-            {}
-          heu_782:
-            {}
-          heu_783:
-            {}
-          heu_784:
-            {}
-          heu_785:
-            {}
-          heu_786:
-            {}
-          heu_787:
-            {}
-          heu_788:
-            {}
-          heu_789:
-            {}
-          heu_79:
-            {}
-          heu_790:
-            {}
-          heu_791:
-            {}
-          heu_792:
-            {}
-          heu_793:
-            {}
-          heu_794:
-            {}
-          heu_795:
-            {}
-          heu_796:
-            {}
-          heu_797:
-            {}
-          heu_798:
-            {}
-          heu_799:
-            {}
-          heu_8:
-            {}
-          heu_80:
-            {}
-          heu_800:
-            {}
-          heu_801:
-            {}
-          heu_802:
-            {}
-          heu_803:
-            {}
-          heu_804:
-            {}
-          heu_805:
-            {}
-          heu_806:
-            {}
-          heu_807:
-            {}
-          heu_808:
-            {}
-          heu_809:
-            {}
-          heu_81:
-            {}
-          heu_810:
-            {}
-          heu_811:
-            {}
-          heu_812:
-            {}
-          heu_813:
-            {}
-          heu_814:
-            {}
-          heu_815:
-            {}
-          heu_816:
-            {}
-          heu_817:
-            {}
-          heu_818:
-            {}
-          heu_819:
-            {}
-          heu_82:
-            {}
-          heu_820:
-            {}
-          heu_821:
-            {}
-          heu_822:
-            {}
-          heu_823:
-            {}
-          heu_824:
-            {}
-          heu_825:
-            {}
-          heu_826:
-            {}
-          heu_827:
-            {}
-          heu_828:
-            {}
-          heu_829:
-            {}
-          heu_83:
-            {}
-          heu_830:
-            {}
-          heu_831:
-            {}
-          heu_832:
-            {}
-          heu_833:
-            {}
-          heu_834:
-            {}
-          heu_835:
-            {}
-          heu_836:
-            {}
-          heu_837:
-            {}
-          heu_838:
-            {}
-          heu_839:
-            {}
-          heu_84:
-            {}
-          heu_840:
-            {}
-          heu_841:
-            {}
-          heu_842:
-            {}
-          heu_843:
-            {}
-          heu_844:
-            {}
-          heu_845:
-            {}
-          heu_846:
-            {}
-          heu_847:
-            {}
-          heu_848:
-            {}
-          heu_849:
-            {}
-          heu_85:
-            {}
-          heu_850:
-            {}
-          heu_851:
-            {}
-          heu_852:
-            {}
-          heu_853:
-            {}
-          heu_854:
-            {}
-          heu_855:
-            {}
-          heu_856:
-            {}
-          heu_857:
-            {}
-          heu_858:
-            {}
-          heu_859:
-            {}
-          heu_86:
-            {}
-          heu_860:
-            {}
-          heu_861:
-            {}
-          heu_862:
-            {}
-          heu_863:
-            {}
-          heu_864:
-            {}
-          heu_865:
-            {}
-          heu_866:
-            {}
-          heu_867:
-            {}
-          heu_868:
-            {}
-          heu_869:
-            {}
-          heu_87:
-            {}
-          heu_870:
-            {}
-          heu_871:
-            {}
-          heu_872:
-            {}
-          heu_873:
-            {}
-          heu_874:
-            {}
-          heu_875:
-            {}
-          heu_876:
-            {}
-          heu_877:
-            {}
-          heu_878:
-            {}
-          heu_879:
-            {}
-          heu_88:
-            {}
-          heu_880:
-            {}
-          heu_881:
-            {}
-          heu_882:
-            {}
-          heu_883:
-            {}
-          heu_884:
-            {}
-          heu_885:
-            {}
-          heu_886:
-            {}
-          heu_887:
-            {}
-          heu_888:
-            {}
-          heu_889:
-            {}
-          heu_89:
-            {}
-          heu_890:
-            {}
-          heu_891:
-            {}
-          heu_892:
-            {}
-          heu_893:
-            {}
-          heu_894:
-            {}
-          heu_895:
-            {}
-          heu_896:
-            {}
-          heu_897:
-            {}
-          heu_898:
-            {}
-          heu_899:
-            {}
-          heu_9:
-            {}
-          heu_90:
-            {}
-          heu_900:
-            {}
-          heu_901:
-            {}
-          heu_902:
-            {}
-          heu_903:
-            {}
-          heu_904:
-            {}
-          heu_905:
-            {}
-          heu_906:
-            {}
-          heu_907:
-            {}
-          heu_908:
-            {}
-          heu_909:
-            {}
-          heu_91:
-            {}
-          heu_910:
-            {}
-          heu_911:
-            {}
-          heu_912:
-            {}
-          heu_913:
-            {}
-          heu_914:
-            {}
-          heu_915:
-            {}
-          heu_916:
-            {}
-          heu_917:
-            {}
-          heu_918:
-            {}
-          heu_919:
-            {}
-          heu_92:
-            {}
-          heu_920:
-            {}
-          heu_93:
-            {}
-          heu_94:
-            {}
-          heu_95:
-            {}
-          heu_96:
-            {}
-          heu_97:
-            {}
-          heu_98:
-            {}
-          heu_99:
-            {}
-          object_mesh_frame:
-            {}
-          object_pose:
-            {}
-          object_pose_aligned:
-            {}
+                              palm:
+                                finger_1_link_0:
+                                  finger_1_link_1:
+                                    finger_1_link_2:
+                                      finger_1_link_3:
+                                        {}
+                                finger_2_link_0:
+                                  finger_2_link_1:
+                                    finger_2_link_2:
+                                      finger_2_link_3:
+                                        {}
+                                finger_middle_link_0:
+                                  finger_middle_link_1:
+                                    finger_middle_link_2:
+                                      finger_middle_link_3:
+                                        {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -4679,9 +853,7 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 4096
       Min Color: 0; 0; 0
-      Min Intensity: 0
       Name: PointCloud2
       Position Transformer: XYZ
       Queue Size: 10
@@ -4704,111 +876,6 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        # Right_Index_Basecover:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Index_Phadist:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Index_Phamed:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Index_Phaprox:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Little_Basecover:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Little_Phadist:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Little_Phamed:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Little_Phaprox:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Middle_Basecover:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Middle_Phadist:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Middle_Phamed:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Middle_Phaprox:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Ring_Basecover:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Ring_Phadist:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Ring_Phamed:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Ring_Phaprox:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Thumb_Basecover:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Thumb_Phadist:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Thumb_Phamed:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # Right_Thumb_Phaprox:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
-        # base_link_hithand:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
-        #   Value: true
         camera_bottom_screw_frame:
           Alpha: 1
           Show Axes: false
@@ -4850,10 +917,206 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        # palm_link_hithand:
-        #   Alpha: 1
-        #   Show Axes: false
-        #   Show Trail: false
+        finger_1_link_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_median_actuating_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_median_bar:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_median_bar_underactuated:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_paradistal_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_paramedian_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_paraproximal_actuating_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_paraproximal_bar:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_proximal_actuating_bar:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_1_link_proximal_actuating_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_median_actuating_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_median_bar:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_median_bar_underactuated:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_paradistal_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_paramedian_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_paraproximal_actuating_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_paraproximal_bar:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_proximal_actuating_bar:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_2_link_proximal_actuating_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_median_actuating_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_median_bar:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_median_bar_underactuated:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_paradistal_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_paramedian_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_paraproximal_actuating_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_paraproximal_bar:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_proximal_actuating_bar:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        finger_middle_link_proximal_actuating_hinge:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        palm:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         panda_link0:
           Alpha: 1
           Show Axes: false
@@ -4942,37 +1205,39 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.9765243530273438
+      Distance: 2.383021831512451
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.7491245269775391
-        Y: 0.08264623582363129
-        Z: 0.2860672175884247
+        X: 0.621435821056366
+        Y: 0.0027537362184375525
+        Z: 0.39782240986824036
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.1353980451822281
+      Pitch: 0.6653974056243896
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.3654013872146606
+      Yaw: 5.383570194244385
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1052
+  Height: 1359
   Hide Left Dock: false
   Hide Right Dock: true
   MotionPlanning:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000400000000000002790000036dfc020000000cfb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006e00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c00610079007301000000470000012c000000f100fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000017a0000023a000001bd00fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004d00fffffffb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000003c005400720061006a006500630074006f007200790020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004d00ffffff000000010000010f0000034efc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003f0000034e000000c200fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000078000000040fc0100000002fb0000000800540069006d00650100000000000007800000037100fffffffb0000000800540069006d00650100000000000004500000000000000000000005000000036d00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd000000040000000000000279000004a0fc020000000dfb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006e00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c0061007900730100000047000000f1000000f100fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000013f000001c9000001bd00fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001900000019fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000003c005400720061006a006500630074006f007200790020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001900000019fb000000260052006f0062006f007400690071003300460069006e00670065007200500061006e0065006c010000030f000001d8000001d800ffffff000000010000010f0000034efc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003f0000034e000000c200fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000078000000040fc0100000002fb0000000800540069006d00650100000000000007800000037100fffffffb0000000800540069006d0065010000000000000450000000000000000000000500000004a000000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Robotiq3FingerPanel:
+    collapsed: false
   Selection:
     collapsed: false
   Time:
@@ -4984,5 +1249,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1920
-  X: 0
-  Y: 0
+  X: 67
+  Y: 34

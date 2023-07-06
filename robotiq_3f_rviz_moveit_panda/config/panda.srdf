@@ -115,7 +115,7 @@
     <!-- <end_effector name="hand_eef" parent_link="panda_link8" group="hithand" parent_group="panda_arm" /> -->
     <end_effector name="hand_eef" parent_link="panda_link8" group="robotiq_hand" parent_group="panda_arm" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
-    <!-- <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="panda_link0" /> -->
+    <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="panda_link0" />
 
     <disable_collisions link1="camera_link" link2="panda_link0" reason="Adjacent" />
     <disable_collisions link1="camera_link" link2="panda_link1" reason="Never" />

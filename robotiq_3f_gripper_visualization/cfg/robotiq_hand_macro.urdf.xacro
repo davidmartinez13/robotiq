@@ -748,6 +748,13 @@ there are multiple hands then a prefix followed by an "_" is needed.
         <mu1>1.1</mu1>
         <mu2>1.1</mu2>
       </gazebo>
+
+    <joint name="robotiq_palm_joint" type="fixed">
+      <parent link="${prefix}palm"/>
+      <child link="palm_link_robotiq"/>
+      <origin xyz="0.02 0 0" rpy="-1.5708 0 1.5708"/>
+    </joint>
+    <link name="palm_link_robotiq"/>
     <!-- End of link list -->
 
     <!-- Joint list -->

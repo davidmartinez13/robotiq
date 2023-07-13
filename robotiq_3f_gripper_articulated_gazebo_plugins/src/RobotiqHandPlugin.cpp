@@ -163,7 +163,7 @@ void RobotiqHandPlugin::Load(gazebo::physics::ModelPtr _parent,
   // Broadcast joint state.
   this->pubJointStatesQueue = this->pmq.addPub<sensor_msgs::JointState>();
   this->pubJointStates = this->rosNode->advertise<sensor_msgs::JointState>(
-    this->prefix + std::string("robotiq3f/joint_states"), 10);
+    this->prefix + std::string("robotiq_hand/joint_states"), 10);
 
   // Subscribe to user published handle control commands.
   ros::SubscribeOptions handleCommandSo =

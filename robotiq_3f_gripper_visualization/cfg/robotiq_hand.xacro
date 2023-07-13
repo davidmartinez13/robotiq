@@ -20,11 +20,7 @@ robotiq_hand - articulated version of the robotiq robotiq-3f-gripper,
                         <!--<prefix>pre_</prefix>-->
                         <!-- This is chosen, so it's compatible with the "Robotiq3FGripperSimpleController.py"-->
                         <topic_command>/Robotiq3FGripperRobotOutput</topic_command>
-                        <!-- <topic_state>/hand/state</topic_state> -->
                         <topic_state>/robotiq3f/state</topic_state>
-                        <topic_command>/robotiq3f/command</topic_command>
-                        <topic_state>/robotiq3f/joint_states</topic_state>
-
                 </plugin>
         </gazebo>
 

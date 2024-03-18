@@ -60,6 +60,11 @@ def genCommand(char, command):
         command.rGTO = 1
         command.rSPA = 255
         command.rFRA = 150
+        command.rSPB = 255
+        command.rFRB = 150
+        command.rSPC = 255
+        command.rFRC = 150
+        command.rICF = 1
 
     if char == 'r':
         command = Robotiq3FGripperRobotOutput();
@@ -67,9 +72,31 @@ def genCommand(char, command):
 
     if char == 'c':
         command.rPRA = 255
+        command.rPRB = 255
+        command.rPRC = 255
 
     if char == 'o':
         command.rPRA = 0
+        command.rPRB = 0
+        command.rPRC = 0
+
+    if char == 'ca':
+        command.rPRA = 255
+
+    if char == 'oa':
+        command.rPRA = 0
+
+    if char == 'cb':
+        command.rPRB = 255
+
+    if char == 'ob':
+        command.rPRB = 0
+
+    if char == 'cc':
+        command.rPRC = 255
+
+    if char == 'oc':
+        command.rPRC = 0
 
     if char == 'b':
         command.rMOD = 0
@@ -90,6 +117,22 @@ def genCommand(char, command):
             command.rPRA = 255
         if command.rPRA < 0:
             command.rPRA = 0
+    except ValueError:
+        pass
+    try:
+        command.rPRB = int(char)
+        if command.rPRB > 255:
+            command.rPRB = 255
+        if command.rPRB < 0:
+            command.rPRB = 0
+    except ValueError:
+        pass
+    try:
+        command.rPRC = int(char)
+        if command.rPRC > 255:
+            command.rPRC = 255
+        if command.rPRC < 0:
+            command.rPRC = 0
     except ValueError:
         pass
 
@@ -124,21 +167,21 @@ def askForCommand(command):
     currentCommand += ', rMOD = ' + str(command.rMOD)
     currentCommand += ', rGTO = ' + str(command.rGTO)
     currentCommand += ', rATR = ' + str(command.rATR)
-    ##    currentCommand += ', rGLV = ' + str(command.rGLV)
-    ##    currentCommand += ', rICF = ' + str(command.rICF)
-    ##    currentCommand += ', rICS = ' + str(command.rICS)
+    # currentCommand += ', rGLV = ' + str(command.rGLV)
+    currentCommand += ', rICF = ' + str(command.rICF)
+    # currentCommand += ', rICS = ' + str(command.rICS)
     currentCommand += ', rPRA = ' + str(command.rPRA)
     currentCommand += ', rSPA = ' + str(command.rSPA)
     currentCommand += ', rFRA = ' + str(command.rFRA)
 
     # We only show the simple control mode
-    ##    currentCommand += ', rPRB = ' + str(command.rPRB)
+    currentCommand += ', rPRB = ' + str(command.rPRB)
     ##    currentCommand += ', rSPB = ' + str(command.rSPB)
     ##    currentCommand += ', rFRB = ' + str(command.rFRB)
-    ##    currentCommand += ', rPRC = ' + str(command.rPRC)
+    currentCommand += ', rPRC = ' + str(command.rPRC)
     ##    currentCommand += ', rSPC = ' + str(command.rSPC)
     ##    currentCommand += ', rFRC = ' + str(command.rFRC)
-    ##    currentCommand += ', rPRS = ' + str(command.rPRS)
+    currentCommand += ', rPRS = ' + str(command.rPRS)
     ##    currentCommand += ', rSPS = ' + str(command.rSPS)
     ##    currentCommand += ', rFRS = ' + str(command.rFRS)
 
@@ -149,6 +192,12 @@ def askForCommand(command):
     strAskForCommand += 'a: Activate\n'
     strAskForCommand += 'c: Close\n'
     strAskForCommand += 'o: Open\n'
+    strAskForCommand += 'ca: Close A\n'
+    strAskForCommand += 'oa: Open A\n'
+    strAskForCommand += 'cb: Close B\n'
+    strAskForCommand += 'ob: Open B\n'
+    strAskForCommand += 'cc: Close C\n'
+    strAskForCommand += 'ob: Open C\n'
     strAskForCommand += 'b: Basic mode\n'
     strAskForCommand += 'p: Pinch mode\n'
     strAskForCommand += 'w: Wide mode\n'
